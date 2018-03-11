@@ -173,8 +173,8 @@ z-index: 999;
 /*----------HISTORY----------*/
 .history {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
@@ -219,21 +219,21 @@ z-index: 999;
 /*----------TO-PRODUCTIO----------*/
 .to-production {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
 /*------------CONTACTS----------*/
 .contacts {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
     .contacts-hotline {
-      width: 936px;
+      width: 922px;
       height: 100px;
       border: 1px silver solid;
       display: block;
@@ -243,7 +243,7 @@ z-index: 999;
       box-shadow: 0 0 7px #000;
     }
     .contact-style {
-      width: 458px;
+      width: 451px;
       height: 150px;
       border: 1px silver solid;
       display: block;
@@ -290,14 +290,14 @@ z-index: 999;
 }
   .product {
     margin: 1px;
-    width: 948px;
-    padding: 0 3px 0 3px;
+    width: 934px;
+    padding: 0 10px 0 10px;
     min-height: 492px;
     border: 1px solid #000;
   }
     .production-cars {
-      margin: 5px;
-      width: 930px;
+      margin: 10px 0 10px 0;
+      width: 926px;
       padding: 3px;
       height: 200px;
       display: block;
@@ -320,7 +320,7 @@ z-index: 999;
           .production-cars-text {
             display: inline-block;
             float: right;
-            width: 720px;
+            width: 716px;
             height: 190px;
             margin: 5px 5px 3px 0;
             background-color: #fff;
@@ -348,19 +348,9 @@ z-index: 999;
                 #table1 {
                   display: inline-block;
                   float: left;
-                  width: 322px;
+                  width: 343px;
                   height: auto;
                   margin-left: 10px;
-                  background-color: #e3e4e5;
-                  border-radius: 10px;
-                  box-shadow: 0 0 7px #000;
-                }
-                #table2 {
-                  display: inline-block;
-                  float: right;
-                  width: 364px;
-                  height: auto;
-                  margin-right: 10px;
                   background-color: #e3e4e5;
                   border-radius: 10px;
                   box-shadow: 0 0 7px #000;
@@ -368,27 +358,18 @@ z-index: 999;
                 #t1{
                     text-align: left;
                     text-indent: 5px;
-                    width: 210px;
+                    width: 220px;
                   }
                     #t2 {
-                      width: 110px;
+                      width: 117px;
                       text-align: center;
                     }
-                      #t3{
-                        text-align: left;
-                        text-indent: 5px;
-                        width: 250px;
+                      .characteristics-main p {
+                        font-family: Tahoma;
+                        font-size: 10.5pt;
+                        line-height: 1.5em;
+                        text-decoration: none;
                       }
-                        #t4 {
-                          width: 110px;
-                          text-align: center;
-                        }
-                        .characteristics-main p {
-                          font-family: Tahoma;
-                          font-size: 10.5pt;
-                          line-height: 1.5em;
-                          text-decoration: none;
-                        }
 .bucket-bolt {
   margin: 1px;
   width: 948px;
@@ -429,22 +410,22 @@ z-index: 999;
 }
 .serv {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
 .guarantee {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
 .accessory {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
@@ -457,8 +438,8 @@ z-index: 999;
 }
 .client {
   margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
+  width: 934px;
+  padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
