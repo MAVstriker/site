@@ -170,6 +170,7 @@ z-index: 999;
   min-height: 492px;
   border: 1px solid #000;
 }
+/*----------HISTORY----------*/
 .history {
   margin: 1px;
   width: 948px;
@@ -215,6 +216,7 @@ z-index: 999;
           text-align: center;
           line-height: 1em;
         }
+/*----------TO-PRODUCTIO----------*/
 .to-production {
   margin: 1px;
   width: 948px;
@@ -222,6 +224,7 @@ z-index: 999;
   min-height: 492px;
   border: 1px solid #000;
 }
+/*------------CONTACTS----------*/
 .contacts {
   margin: 1px;
   width: 948px;
@@ -281,17 +284,39 @@ z-index: 999;
             font-style: normal;
             text-align: left;
           }
-
+/*-----------PRODUCTION----------*/
 .production {
 
 }
-.product {
-  margin: 1px;
-  width: 948px;
-  padding: 0 3px 0 3px;
-  min-height: 492px;
-  border: 1px solid #000;
-}
+  .product {
+    margin: 1px;
+    width: 948px;
+    padding: 0 3px 0 3px;
+    min-height: 492px;
+    border: 1px solid #000;
+  }
+    .production-cars {
+      margin: 5px;
+      width: 930px;
+      padding: 3px;
+      height: 200px;
+      border: 1px solid #e3e4e5;
+      display: block;
+    }
+      .production-cars-img-block {
+        display: inline-block;
+        float: left;
+        width: 198px;
+        height: 198px;
+        border: 1px green solid;
+      }
+        .production-cars-img {
+          width: 198px;
+          border: 1px silver dashed;
+            border-radius: 10px;
+          box-shadow: 0 0 4px black;
+        }
+
 .bucket-bolt {
   margin: 1px;
   width: 948px;
