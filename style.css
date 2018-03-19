@@ -680,7 +680,7 @@ z-index: 999;
 footer {
   display: inline-block;
   position: static;
-  width: auto;
+  width: 940px;
   height: 300px;
   padding: 3px 10px;
   background-color: #fff;

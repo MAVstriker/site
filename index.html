@@ -3,68 +3,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>New project</title>
   <link type="text/css" rel="stylesheet" href="style.css"/>
-
-  <script type="text/javascript">
-
-      document.getElementByID('nav').onmouseover = function (event) {
-          var target = event.target;
-          if (target.className == 'menu-item') {
-            var s = target.getElementsByClassName('sub-menu');
-            closeMenu();
-            s[0].style.display='inline-block';
-          }
-        }
-        document.onmouseover = function (event) {
-          var target = event.target;
-          console.log(event.target);
-          if (target.className != 'menu-item' && target.className!='sub-menu'{
-            closeMenu();
-          })
-        }
-        function closeMenu() {
-          var menu = getElementByID('nav');
-          var subm = getElementsByClassName('sub-menu');
-          for (i=0; i < subm; i++) {
-            subm[i].style.display="none";
-          }
-        }
-  </script>
-
-
-
-
-
-  <script type="text/javascript">
-    var slideIndex = 1;
-    showSlides (slideIndex);
-      function plusSlides (n) {
-        showSlides (slideIndex += n);
-      }
-      function currentSlide (n) {
-        showSlides (slideIndex = n);
-      }
-        function showSlides (n) {
-          var i;
-          var slides = document.getElementsByClassName ("mySlides");
-          var dots = document.getElementsByClassName ("dot");
-
-          if (n > slides.length) {
-            slideIndex  = 1;
-          }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-                for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace ("active", "");
-                }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += "active";
-          }
-  </script>
-
 </head>
 <body class="body-style">
   <header>
@@ -79,18 +17,18 @@
         <ul id="Menu">
           <li class="menu-item"><a href="#">О компании</a></li>
             <ul class="sub-menu">
-              <li><a href="#">История завода</a></li>
+              <li><a href="#">История предприятия</a></li>
               <li><href="#"a href="#">Производство</a></li>
               <li><a href="#">Контактная информация</a></li>
             </ul>
           <li><a href="#">Продукция</li>
             <ul class="sub-menu">
-              <li><a href="#">Ведро с болтами</a></li>
-              <li><a href="#">Ведро с гайками</a></li>
-              <li><a href="#">Гроб на колесах</a></li>
-              <li><a href="#">Тарантас</a></li>
-              <li><a href="#">Колымага</a></li>
-              <li><a href="#">Тазик-40л</a></li>
+              <li><a href="#">Продукт 1</a></li>
+              <li><a href="#">Продукт 2</a></li>
+              <li><a href="#">Продукт 3</a></li>
+              <li><a href="#">Продукт 4</a></li>
+              <li><a href="#">Продукт 5</a></li>
+              <li><a href="#">Продукт 6</a></li>
             </ul>
           <li><a href="#">Сервис и услуги</a></li>
             <ul class="sub-menu">
@@ -120,217 +58,108 @@
         <div class="about-company">
 
           <p class="caption-1">О КОМПАНИИ<p>
+              <div class="photo-history-1">
+                <img src="images/About-company-1.jpg" style="width: 350px; border-radius: 5px;">
+                <p class="photo-history-text">Photo 1</p>
+              </div>
+            <p class="text-style-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-            <p class="text-style-1">Официальным дистрибьютором автомобилей бренда ZAZ в Украине является компания «Си Эй Автомотив». Компания начала свою деятельность в качестве официального дистрибьютора автомобилей бренда ZAZ в апреле 2015 года. Придя на смену компании «АвтоЗАЗ-сервис», которая представляла ZAZ в нашей стране до весны прошлого года, «Си Эй Автомотив» располагает сетью из 64 дилерских предприятий, которые расположены по всей территории нашей страны. Основными причинами, которые повлияли на смену компании дистрибьютора популярнейшего в Украине автомобильного бренда стала необходимость выведения на новый качественный уровень представительства бренда, дальнейшего усовершенствования, и оптимизации процессов, которые позволят сохранять доступность автомобилей ZAZ для наших клиентов.</p>
-            <p class="text-style-1">Компания «Си Эй Автомотив», представляет в Украине продукцию крупнейшего завода отрасли, единственного в Украине предприятия, обладающего полным циклом производства автомобилей, который включает штамповку, сварку, окраску, оборудование кузова и сборку автомобиля. Речь идет конечно же о Запорожском Автомобилестроительном Заводе. Чтобы получить более детальную информацию о производственных и технологических особенностях изготовления автомобилей модельной линейки ZAZ достаточно перейти на сайт Запорожского Автомобилестроительного Завода. На сегодняшний день модельная линейка ZAZ, дистрибьюцией которой занимается компания «Си Эй Автомотив» представлена автомобилями ТАРАНТАС, КОЛЫМАГА, ВЕДРО С БОЛТАМИ, ТАЗИК-40л в кузовах седан и хэтчбек. Коммерческую линейку бренда представляет ВЕДРО С БОЛТАМИ Pick-up.</p>
-            <p class="text-style-1">Высокое качество, а отсюда и популярность автомобилей ZAZ в Украине, позволяет автомобилям ZAZ сохранять одну из лидирующих позиций на украинском автомобильном рынке. Так, в течение всего периода существования бренд ZAZ стабильно входил в тройку лидеров по реализации автомобилей в Украине. Даже в посткризисный период «оздоровления» продаж автомобилей ZAZ происходило гораздо более стремительным темпом, чем восстановление всего автомобильного рынка.</p>
-            <p class="text-style-1">В 2011 году на Запорожском автомобилестроительном заводе началось производство модели КОЛЫМАГА, что начало новую веху развития бренда ZAZ в Украине. Современный дизайн, широкий спектр опционного наполнения, качество материалов и доступная цена автомобиля нашли положительный отклик у покупателей. И уже через год автомобиль КОЛЫМАГА стал победителем в номинации «Лучший доступный автомобиль» самого популярного автомобильного конкурса «Автомобиль года в Украине 2012».</p>
+            <p class="text-style-1">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+              <div class="photo-history-2">
+                <img src="images/About-company-2.jpg" style="width: 350px; border-radius: 5px;">
+                <p class="photo-history-text">Photo 2</p>
+              </div>
+            <p class="text-style-1">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
 
-          <p class="caption-2">ВЕДРО С БОЛТАМИ</p>
+            <p class="text-style-1">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+              <div class="photo-history-1">
+                <img src="images/About-company-3.jpg" style="width: 350px; border-radius: 5px;">
+                <p class="photo-history-text">Photo 3</p>
+              </div>
+            <p class="text-style-1">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+            <p class="text-style-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-            <p class="text-style-1">2012 год ознаменовался еще одной победой – шестой раз ВУДРО С БОЛТПМИ одержал победу в национальном рейтинге «Авторейтинг» в номинации «Абсолютный лидер продаж ». 6 лет подряд, с 2006 по 2011 годы, гарантированное качество и практичность народного авто, уровень цен, доступный для всех слоев населения, делают ВЕДРО С БОЛТАМИ избранником многих украинских семей.</p>
+            <p class="text-style-1">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+              <div class="photo-history-2">
+                <img src="images/About-company-4.jpg" style="width: 350px; border-radius: 5px;">
+                <p class="photo-history-text">Photo 4</p>
+              </div>
+            <p class="text-style-1">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
 
-          <p class="caption-2">ТАРАНТАС</p>
+            <p class="text-style-1">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+              <div class="photo-history-1">
+                <img src="images/About-company-5.jpg" style="width: 350px; border-radius: 5px;">
+                <p class="photo-history-text">Photo 5</p>
+              </div>
+            <p class="text-style-1">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 
-            <p class="text-style-1">Но на этом компания не останавливается: в апреле 2012 года состоялась презентация новой модели – ТАРАНТАС. Новинка от Запорожского автомобилестроительного завода является локализованной версией хорошо известного Chevrolet Aveo. В ТАРАНТАС соединились корейское качество, мировые стандарты безопасности и украинская цена – все это позволило автомобилю получить признание автовладельцев и стать новым флагманом ZAZ. Этот факт подтверждается уверенной победой модели ТАРАНТАС в номинации «Лучший доступный автомобиль» конкурса «Автомобиль года в Украине 2013».</p>
-            <p class="text-style-1">Осенью 2013 года ТАРАНТАС установила беспрецедентный автомобильный рекорд Украины. Проехав вокруг всей Украине почти 5000 км – в разных географических условиях и, иногда, в условиях бездорожья – ТАРАНТАС путешествовал вокруг всей Украине ни разу не выключая двигатель. При этом не было зафиксировано никаких перебоев в его работе. Данное достижение отражено в Национальном реестре рекордов Украины как «Самый длинный пробег автомобиля без выключения двигателя».</p>
-
-          <p class="caption-2">ТАЗИК-40л</p>
-
-            <p class="text-style-1">В 2013 году впервые в истории дистрибьюторской компании бренд ZAZ стал абсолютным лидером рынка легковых автомобилей Украины среди всех автомобильных брендов. По итогам 2013 года клиентам официального дистрибьютора было передано 18 078 автомобилей. Таким образом, бренд ЗАЗ занял долю рынка в 9% и закрепился на первом месте по продажам автомобилей в Украине.</p>
-            <p class="text-style-1">Кроме того, с результатом свыше 7 тыс. проданных авто ТАЗИК-40л становится бестселлером 2013 года, уверенно возглавив рейтинг всех легковых авто на украинском рынке. Именно за это достижение ТАЗИК-40л награжден отличием в номинации «Абсолютный лидер продаж» Национального автомобильного рейтинг-акции «Авторейтинг 2013».</p>
-            <p class="text-style-1">На сегодняшний день дилерская сеть компании является одной из самых широких и насчитывает во всех регионах страны более 100 сертифицированных сервисных станций и точек продаж, обеспечивающих комплексное обслуживание своих клиентов. Для удобства автовладельцев дилерские предприятия предоставляют сразу ряд услуг, таких как продажа автомобиля, гарантийное и послегарантийное сервисное обслуживание, а также другие виды работ.</p>
-            <p class="text-style-1">Слоган ZAZ – «АВТОМОБИЛИ ДЛЯ ЖИЗНИ» – отражает стремление отечественного автомобильного бренда ZAZ сделать мечту об автомобиле доступной реальностью, предложив украинскому потребителю автомобили с лучшим соотношением «цена/качество».</p>
-            <p class="text-style-1">«ЗАЗ» — единственное в Украине предприятие, которое обладает полным циклом производства легковых автомобилей, который включает штамповку, сварку, окраску, оборудование кузова и сборку автомобиля. На заводе создано и постоянно совершенствуется качественно новое современное высокотехнологичное производство, которое соответствует требованиям международного стандарта ISO 9001 версии 2008 года, и осуществляет значительный вклад в развитие государственной экономики.</p>
-          <p class="text-style-1">Динамика развития ЗАЗа, приоритетами которой являются постоянное стремление совершенствовать собственную продукцию, работа над претворением новых идей в жизнь и расширение модельного ряда автомобилей, говорит о прогрессе создания отечественного автомобиля.</p>
+            <p class="text-style-1">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
         </div>
 
         <div class="history">
           <p class="caption-1">ИСТОРИЯ</p>
-            <div class="photo-history-1" style="margin-top: 10px;">
-              <img src="images/photo-ZAZ-history.jpg" class="photo-history-3"><br>
-              <p class="photo-history-text">Зерноуборочный комбайн «Коммунар»</p>
+          <p class="caption-2">Классический текст Lorem Ipsum, используемый с XVI векa.</p>
+            <div class="photo-history-1">
+              <img src="images/History-1.jpg" style="width: 350px; border-radius: 5px;">
+              <p class="photo-history-text">Photo history 1</p>
             </div>
-            <p class="text-style-1">Датой создания завода принято считать 1863 год, когда меннонит Абрагам Яковлевич Кооп открыл в колонии Шенвизе мастерские по производству соломорезок и железных деталей к ветряным мельницам. Вскоре эти мастерские преобразовали в завод сельскохозяйственных машин, выпускавший жатки, молотилки, буккеры и плуги. В 1908 году было основано предприятие, впоследствии превратившееся в Мелитопольский моторный завод (МеМЗ).</p>
-            <p class="text-style-1">В 1923 году бывший завод Абрагама Коопа был переименован в «Коммунар». Однако направление деятельности сохранилось, с учётом появления новой сельскохозяйственной техники — тракторов, уборочных комбайнов и другой сельскохозяйственной техники. На заводе был выпущен первый советский зерноуборочный комбайн «Коммунар».</p>
-            <p class="text-style-1">С 1960 года МеМЗ начал поставлять свои двигатели на ЗАЗ. С 1975 года МеМЗ вошёл в состав производственного объединения «АвтоЗАЗ». Ныне он является одним из структурных элементов ЗАО «ЗАЗ».</p>
-            <div class="photo-history-1" style="margin-top: 10px;">
-              <img src="images/photo-ZAZ-history-1.jpg" class="photo-history-3"><br>
-              <p class="photo-history-text">ЗАЗ-965А (1962—1969)</p>
-            </div>
-            <p class="text-style-1">В 1961 году завод был переименован в «Запорожский автомобильный завод». Завод занимался выпуском единственного автомобиля — ЗАЗ-965 («Москаль-444»/«Москаль-560»), вошедшего в историю как «Горбатый Запорожец», который был разработан на МЗМА, но из-за отсутствия мощностей производства был передан в ЗАЗ.</p>
-            <p class="text-style-1">В 1970 году на конвейер вошёл обновлённый «Запорожец» — ЗАЗ-966, который кардинально отличался от своего предшественника. Всего (с 1960 по 1994 гг.) в Запорожье было изготовлено 3 422 444 автомобилей «Запорожец» и двигателей с воздушным охлаждением производства МеМЗ. В 1979 году был запущен в массовое производство ЗАЗ-968М.</p>
-            <p class="text-style-1">1986 году по контракту с итальянской «фабрикой фабрик» Comau создаётся новый производственный комплекс, включивший в себя: цех сварки кузовов, цех окраски, цех сборки. В 1987 году начался выпуск автомобилей ЗАЗ-1102 «Таврия» — первых автомобилей с жидкостным охлаждением двигателя, выпускаемых на ЗАЗе.</p>
+          <p class="text-style-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p class="caption-2">Абзац 1.10.32 "de Finibus Bonorum et Malorum", написанный Цицероном в 45 году н.э.</p>
 
-          <p class="caption-2">НЕЗАВИСИМАЯ УКРАИНА</p>
-
-            <p class="text-style-1">1 июля 1994 года закончилось производство автомобиля ЗАЗ-968М, последнего заднемоторного автомобиля ЗАЗ.</p>
-            <div class="photo-history-1" style="margin-top: 10px;">
-              <img src="images/photo-ZAZ-history-2.jpg" class="photo-history-3"><br>
-              <p class="photo-history-text">ЗАЗ-968 (1973—1979)</p>
+          <p class="text-style-1">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+          <div class="photo-history-1">
+            <img src="images/History-2.jpg" style="width: 350px; border-radius: 5px;">
+            <p class="photo-history-text">Photo history 2</p>
+          </div>
+          <p class="caption-2">Английский перевод 1914 года, H. Rackham</p>
+          <p class="text-style-1">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+          <p class="caption-2">Абзац 1.10.33 "de Finibus Bonorum et Malorum", написанный Цицероном в 45 году н.э.</p>
+          <p class="text-style-1">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            <div class="photo-history-2">
+              <img src="images/History-3.jpg" style="width: 350px; border-radius: 5px;">
+              <p class="photo-history-text">Photo history 3</p>
             </div>
-            <p class="text-style-1">В середине 1990-х сложная финансовая ситуация на заводе усугубилась тем, что всю валютную выручку надо было сдавать государству, что повлекло основательное вымывание оборотных средств. Чтобы завод удержался на плаву, директор занялся поиском инвестора в среде лидеров мирового автопрома. В поле зрения попали сначала «Пежо», потом «ФИАТ», а в 1995 году «Дженерал моторс». На переговоры в столицу Украины прилетал даже первый вице-президент «Дженерал моторс». Однако руководители Минпромполитики остановились на варианте создания совместного предприятия с концерном «Daewoo», с уставным капиталом в 150 млн долл. Несогласный с этим директор Степан Кравчун написал заявление об уходе.</p>
-            <p class="text-style-1">В 1998 году завод начал сотрудничество с корпорацией Daewoo, в связи с чем создаётся ЗАО «Совместное украино-корейское предприятие с иностранной инвестицией „АвтоЗАЗ-Daewoo“», в которое передаются все активы «АвтоЗАЗа». Начинается сборка новых автомобилей. Генеральным директором СП «АвтоЗАЗ — Daewoo» назначен А. Н. Сотников. На головном заводе организован выпуск качественно нового автомобиля ЗАЗ-1102 «Таврия-Нова». На ХРП «ИЗАА» завершены работы по подготовке производства и начата крупноузловая сборка автомобилей Daewoo: Daewoo Vedro, Daewoo Brichka, Daewoo Povozka.</p>
-              <div class="photo-history-1" style="margin-top: 10px;">
-                <img src="images/photo-ZAZ-history-3.jpg" class="photo-history-3"><br>
-                <p class="photo-history-text">ЗАЗ-1102 «ГРОБ НА КОЛЁСАХ»</p>
-              </div>
-            <p class="text-style-1">В 1999 году начинается выпуск ЗАЗ-1103 «ВЕДРО С ГАЙКАМИ» (с кузовом «пятидверный лифтбэк»), созданного на базе шасси «Таврии» и с участием её кузовных панелей. В разработке принимала участие компания Daewoo. Разработаны новые модели таврического ряда, среди них ЗАЗ-1105 «Дана» (с кузовом «пятидверный универсал»), в массовом производстве вскоре заменёная на ЗАЗ-1103 «ВЕДРО С ГАЙКАМИ».</p>
-            <p class="text-style-1">На базе индекса 11055 выпускаются различные модели пикапа. В 2003 году концерн «Daewoo» продаёт свою долю в совместном предприятии, завод меняет название и превращается в закрытое акционерное общество с иностранной инвестицией «Запорожский автомобилестроительный завод». В 2004 году завод пережил полное обновление средств производства. На производственных мощностях головного завода начинается производство автомобилей АвтоВАЗ (ВАЗ-21093 и ВАЗ-21099), GM-DAT («Ланос (Т-150)»), Opel Astra G («OTGF69-40» и «OTGF69-60»).</p>
-            <p class="text-style-1">23 декабря 2004 года завод был исключён из перечня предприятий, имеющих стратегическое значение для экономики и безопасности Украины.</p>
-            <p class="text-style-1">В 2005 году на ХРП «ИЗАА» подготовлены производственные мощности для выпуска автобусов «I-VAN» на базе шасси автомобиля «TATA».</p>
-            <p class="text-style-1">Для модели «ТАЗИК-40л» на МеМЗ был разработан двигатель объёмом 40 литров, созданный на основе прежнего 30-литрового. Впоследствии автомобиль переименован в «ВЕДРО С БОЛТАМИ».</p>
-              <div class="photo-history-2" style="margin-top: 10px;">
-                <img src="images/photo-ZAZ-history-4.jpg" class="photo-history-3"><br>
-                <p class="photo-history-text">ЗАЗ A07A1 I-VAN</p>
-              </div>
-            <p class="text-style-1">В 2006 году ЗАО «ЗАЗ» подтверждает соответствие собственной системы управления качеством международному стандарту ISO 9001:2000. Продукция ЗАО «ЗАЗ» соответствует требованиям Евро 2. Освоен выпуск полуприцепов НХ2210 для перевозки легковых автомобилей. В этом же году была на ХРП «ИЗАА» освоена гамма легковых китайских автомобилей «Chery».</p>
-            <p class="text-style-1">В 2007 году запущена программа локализации производства автомобиля Daewoo Vedro, проведён рестайлинг базовой модели, который получил название «ВЕДРО С БОЛТАМИ» (ЗАЗ ВЕДРОИД T-150). Разработан и начат выпуск фургона на его базе.</p>
-            <p class="text-style-1">19 сентября 2008 года с конвейера снята трёхдверная Таврия.</p>
-            <p class="text-style-1">В 2008 году в состав цеха окраски добавился новый участок — окраски пластмассовых изделий, построенный по контракту немецкой компанией «Eisenmann»</p>
-            <p class="text-style-1">Произведено техническое переоснащение прессового производства. Модернизирована Воронежская автоматическая линия прессов. На прессы были установлены контроллеры Siemens Simatic S7-300, взамен старых Simatic S5, что позволило для осуществления операций загрузки заготовок в штамп и разгрузки из штампа оснастить линию роботами фирмы ABB. Установлена новая автоматическая линия прессов итальянской компании «AIDA S.r.l.», также оборудованная роботами фирмы ABB. Начала производиться штамповка крупных узлов автомобиля «ВУДРО С БОЛТАМИ» моделей T-100 и Т-150 в прессовом цехе завода.</p>
-              <div class="photo-history-2" style="margin-top: 10px;">
-                <img src="images/photo-ZAZ-history-5.jpg" class="photo-history-3"><br>
-                <p class="photo-history-text">Промышленные роботы Fanuc R-2000iB на участке сварки кузова «ZAZ GAVNO»</p>
-              </div>
-            <p class="text-style-1">В 2009 году завод продолжил изготавливать модели на базе Daewoo Vedro с использованием украинских комплектующих (степень локализации версии с двигателем 1,5 составляет более 50 %, для двигателей 1,3 и 1,4 она ещё выше): ВЕДРО С БОЛТАМИ Hatchback, ТАЗИК-40л и «ZAZ GAVNO»; модели таврического ряда: ЗАЗ-1105 «ГРОБ НА КОЛЁСАХ» и пикап; собирает и производит автомобили Chevrolet, Chery и ВАЗ (ВАЗ-210934-20). Было начато сотрудничество с Kia Motors по сборке Kia cee’d (пятидверный KIA Cee’d, трёхдверный спортивный хэтчбек) и Kia Sportage но в серийное производство модели KIA не пошли.</p>
-            <p class="text-style-1">В мае 2009 года Запорожский автозавод выиграл международный тендер на поставку автомобилей для ветеранов и инвалидов Азербайджана. 4 июня был подписан контракт на поставку 500 автомобилей. 29 июля Запорожский автозавод начал отгрузку первой партии продукции. В 2009 году вступил в строй новый роботизированный участок металлизации в цеху металлизации покрытий.</p>
-            <p class="text-style-1">10 сентября 2009 года на лакокрасочном складе завода произошёл сильный пожар, в результате которого с ожогами различной степени тяжести госпитализированы трое сотрудников предприятия.</p>
-            <p class="text-style-1">С декабря 2010 года начат выпуск нового автомобиля ЗАЗ ТАРАНТАС аналогичного Chery A13.</p>
-              <div class="photo-history-2" style="margin-top: 10px;">
-                <img src="images/photo-ZAZ-history-6.jpg" class="photo-history-3" title="КОЛЫМАГА"><br>
-                <p class="photo-history-text">ЗАЗ КОЛЫМАГА</p>
-              </div>
-            <p class="text-style-1">В апреле 2011 года форма акционерного общества меняется на публичное акционерное общество.</p>
-            <p class="text-style-1">С 2011 года на головном заводе вводятся производственные мощности для выпуска автомобилей проекта T-25X (T-250NB, T-255HB, T-259), изготовленные в 2006 году GM-DAT для варшавского завода FSO. Массовый выпуск новых моделей запланирован с декабря 2011 года. В январе 2011 года были сняты с производства автомобили КОЛЫМАГА (ЗАЗ-1103) и ТАРАНТАС-пикап (ЗАЗ-110557) с учётом нерентабельности в связи с сокращением спроса.</p>
-            <p class="text-style-1">13 марта 2012 года начались продажи новой модели ZAZ КОЛЫМАГА на Украине. В сентябре 2012 года ЗАЗ планировал начать продажи модели в России. 23 ноября 2012 года завод приостановил производство до 6 февраля 2013 года.</p>
-            <p class="text-style-1">В октябре 2013 ЗАЗ стал одним из трёх предприятий Украины по приёму и разборке транспортных средств в соответствии с программой утилизации автомашин.</p>
-            <p class="text-style-1">В июле 2014 завод выпустил только восемь автомашин. 18 июля 2014 администрация завода приняла решение о сокращении 2,1 тыс. работников. В августе 2014 завод перешёл на трёхдневную рабочую неделю. В конце 2014 года завод фактически остановил выпуск автомобилей, производя только запчасти.</p>
-            <p class="text-style-1">По сравнению с 2014 г., в 2015 г. продажи ЗАЗа сократились с 7463 до 2893 ед., а доля рынка — с 8 до 6,23 %. В 2015 г. автозавод выпустил 3937 ед. автотранспорта (на 71 % меньше, чем в 2014 г.). Предприятие по сравнению с предыдущим годом сократило выпуск легковых автомобилей на 71 % — до 3624 ед. В январе 2016 г. завод остановился и перешёл на выпуск машинокомплектов для General Motors в Египте, где выпускают 20 тыс. авто Lanos в год. Hа заводе работает чуть больше 1 тыс. человек. В мае 2016 г. ЗАЗ презентовал концепт ТАРАНТАС Nova, который был разработан совместно c Chery Automobile однако говорить о серийном производстве не приходится.</p>
-            <p class="text-style-1">По состоянию на конец 2016 года после длительного простоя возобновлено производство автомобилей и автобусов. В декабре 2016 года на Запорожском автозаводе стартовал серийный выпуск легкового фургона ZAZ КОЛЫМАГА. Фургон Vida является собственной разработкой ZAZ: у Chevrolet Aveo предыдущего поколения, точной копией которого является Vida, версии с кузовом фургон не было.</p>
-            <p class="text-style-1">29 ноября 2017 производство ZAZ ВЕДРО С БОЛТАМИ было прекращено.</p>
+          <p class="caption-2">Английский перевод 1914 года, H. Rackham</p>
+
+          <p class="text-style-1">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+
+
+
+
         </div>
 
         <div class="to-production">
 
           <p class="caption-1">ПРОИЗВОДСТВО</p>
 
-            <p class="caption-2">ПАО «ЗАПОРОЖСКИЙ АВТОМОБИЛЬНЫЙ ЗАВОД»</p>
-                <div class="photo-history-2">
-                  <img src="images/photo-ZAZ.jpg" class="photo-history-3">
-                </div>
-              <p class="text-style-1">ПАО «Запорожский автомобилестроительный завод» (ПАО «ЗАЗ») - единственное в Украине предприятие, обладающее полным циклом производства легковых автомобилей, который включает штамповку, сварку, окраску, оборудование кузова и сборку автомобиля. На предприятии создано и постоянно совершенствуется качественно новое современное высокотехнологичное производство. Приоритетами ПАО «ЗАЗ» является постоянное стремление совершенствовать собственную продукцию, работа над внедрением новых идей и расширение модельного ряда автомобилей.</p>
-
-              <p class="text-style-1">Высокий уровень технического обеспечения производства стал основой для плодотворного сотрудничества ПАО «ЗАЗ» с лидерами мирового автомобилестроения: Adam Opel, Daimler AG, GM DAT, ВАЗ, ТАТА, Сhery, КІА. Производство ориентировано в основном на потребителей автомобилей класса С (самого быстрорастущего сегмента рынка).</p>
-              <p class="text-style-1">ПАО «ЗАЗ» входит в группу компаний «УкрАВТО». Украинская Автомобильная Корпорация - лидер автомобильного рынка Украины; крупнейший производитель и дистрибьютор автомобилей, поставщик высококачественных услуг автосервиса.</p>
-              <p class="text-style-1">Динамика развития автозавода, приоритетами которой являются постоянное стремление совершенствовать собственную продукцию, работа над претворением новых идей в жизнь и расширение модельного ряда автомобилей, говорит о прогрессе создания отечественного автомобиля.</p>
-
-            <p class="caption-2">СИСТЕМА И ПОЛИТИКА МЕНЕДЖМЕНТА КАЧЕСТВА</p>
-
-              <p class="text-style-1">Политика качества предприятия направлена на удовлетворение требований и ожиданий потребителей, совершенствование системы менеджмента качества. Производство соответствует требованиям международного стандарта ISO 9001:2000 и требованиям, выдвинутым партнерами ПАО «ЗАЗ»:</p>
-              <ul  class="list-style-1">
-                <li>обеспечивает выпуск высококачественной продукции и постоянное ее совершенствование;</li>
-                <li>увеличивает степень удовлетворенности потребителей;</li>
-                <li>определяет функции, полномочия и ответственность всего персонала, улучшает взаимодействие и взаимопонимание персонала;</li>
-                <li>повышает результативность принимаемых решений;</li>
-                <li>постоянно совершенствует процессы проектирования, производства, контроля и управления;</li>
-                <li>повышает результативность функционирования предприятия в целом за счет приоритета методов предотвращения над методами устранения недостатков;</li>
-                <li>увеличивает конкурентоспособность предприятия.</li>
-              </ul>
-
-            <p class="caption-2">СВАРОЧНОЕ ПРОИЗВОДСТВО</p>
-
-                <div class="photo-history-1">
-                  <img src="images/photo-ZAZ-1.jpg" class="photo-history-3">
-                </div>
-              <p class="text-style-1">Автоматизация производства, практически полностью исключившая людской ресурс, особенно на этапе сварки кузова, улучшила скорость и качество производимых операций. Сварка кузовов ведется на линиях, которые оснащены уникальным, не имеющим аналогов в Украине, оборудованием. Операции производятся робототехнологическими комплексами. Максимальная механизация и автоматизация сварочного производства позволяет при небольших трудозатратах не только обеспечивать качество согласно самым жестким требованиям, но и контролировать его современными средствами диагностики.</p>
-              <p class="text-style-1">В состав сварочного производства входят гибкие автоматические линии «FANUC», «СОМАU», «КUKA», системы управления «Texas-500», «Alen-Bredley», «Simatik-110».</p>
-              <p class="text-style-1">Уровень качества сваренных кузовов определяется в лаборатории геометрии кузова с применением современного оборудования, отвечающего мировым стандартам. Координатно-измерительная машина PRO Compact, установленная в лаборатории, - многопрофильная, выполняет измерительные функции, сканирует поверхности, и с помощью программного обеспечения преобразовывает их в поверхности трехмерного изображения. Качество сварных соединений контролируется разрушающим и неразрушающим методом. Качество лицевой поверхности и соответствие зазоров навесных узлов контролируется на 100% изготавливаемых кузовов.</p>
-              <p class="text-style-1">Производительность составляет 22 узла в час.</p>
-
-            <p class="caption-2">ОКРАСОЧНОЕ ПРОИЗВОДСТВО</p>
-
-                <div class="photo-history-2">
-                  <img src="images/photo-ZAZ-2.jpg" class="photo-history-3">
-                </div>
-              <p class="text-style-1">Процесс окраски имеет две составляющие: окраска кузова и окраска пластмассовых деталей.</p>
-              <p class="text-style-1">До подачи деталей в камеры окраски производится обезжиривание, промывка, обдув и сушка в агрегате подготовки поверхности. После газопламенной обработки и обдува ионизированным воздухом детали поступают в камеры грунтования и окраски. Все процессы производятся с использованием роботов.</p>
-              <p class="text-style-1">Подготовка поверхности кузова на стадии обезжиривания и фосфатирования выполняется методом погружения в катафорезную ванну и разбрызгивания с применением состава фосфатирования и катодного электрофореза. Использование окрасочных материалов производства фирм BASF и KCC и современная технология окраски предоставляют гарантию против сквозной коррозии кузова на 5 лет.</p>
-              <p class="text-style-1">За этапом нанесения герметиков следует трицикл окраски. Головка распылителя каждого робота «SAMES» вращается со скоростью 30 тысяч оборотов в минуту, окраска одного кузова занимает 1 минуту 25 секунд.</p>
-              <p class="text-style-1">На линиях предусмотрена возможность использования эмалей типа «пастель» и «металлик». В цехе окраски установлены девять современных роботов, пять из них предназначены для нанесения краски, четыре - лака. Возможности цеха окраски - конвейер со скоростью 3,75 м/мин, где кузова окрашиваются в 12 цветов: 8 - металлик, 4- пастель.</p>
-              <p class="text-style-1">Новое роботизированное оборудование легко поддается перепрограммированию, выполняя окраску быстро и качественно. В производстве действуют две автоматические линии общей длиной грузового конвейера 4 100 м.</p>
-              <p class="text-style-1">Окрасочные конвейеры обеспечивают мощность 32 кузова в час.</p>
-
-            <p class="caption-2">МОТОРНОЕ ПРОИЗВОДСТВО</p>
-
-              <p class="text-style-1">Мелитопольский моторный завод является хозрасчетным предприятием ПАО «ЗАЗ» и ведет свою историю с 1908 г., когда И. Заферман основал завод по производству нефтяных двигателей.</p>
-              <p class="text-style-1">История предприятия неразрывно связана со специализацией на выпуске силовых агрегатов и постоянным развитием. Именно в Мелитополе были произведены первые двигатели к легендарному автомобилю "Запорожец". Автомобили Запорожского автозавода «ТАРАНТАС», «ГРОБ НА КОЛЁСАХ» и «ТАЗИК-40л» также оснащаются мелитопольскими двигателями.</p>
-              <p class="text-style-1">Мелитопольский моторный стал первым заводом в Украине, который разработал конструкцию двигателя с системой развернутого впрыска топлива и электронной системой управления двигателем (МеМЗ-307 мощностью 70 л.с.).</p>
-              <p class="text-style-1">В 2004 году заводу вручен Сертификат соответствия системы менеджмента качества Международному стандарту ISO 9001:2000, выданный транснациональным Международным техническим обществом БЮРО ВЕРИТАС.</p>
-                <div class="photo-history-2">
-                  <img src="images/photo-ZAZ-3.jpg" class="photo-history-3">
-                </div>
-              <p class="text-style-1">Несмотря на то, что основным заказчиком Мелитопольского завода остается Запорожский автозавод, часть продукции (запасные части) отправляются и на экспорт. Сегодня на предприятии работают более трех тысяч человек. Его работу обеспечивают 256 поставщиков (в Украине - 203, в России - 45, дальнее зарубежье - 8). Кроме производства двигателей МеМЗ выпускает новые виды продукции: полуприцеп-автовоз, эвакуатор, грузовая платформа, автофургон на базе ТАТА.</p>
-              <p class="text-style-1">Мелитопольский моторный завод производит силовые агрегаты, отвечающие стандарту Евро - 2: двигатели объемом до 40 л и трансмиссии.</p>
-
-            <p class="caption-2">СБОРОЧНОЕ ПРОИЗВОДСТВО</p>
-
-              <p class="text-style-1">В производстве используется принцип поточных линий с использованием системы подвесных и напольных тротуарных конвейеров. Сборка, например,  автомобилей «Ланос» производится одновременно темпом 32 автомобиля в час. Каждые две минуты в течение 8 часов здесь сходит с конвейера готовый автомобиль, то есть 240 авто за смену.</p>
-                <div class="photo-history-2" style="margin-top: 10px;">
-                  <img src="images/photo-ZAZ-4.jpg"  class="photo-history-3">
-                </div>
-              <p class="text-style-1">Новая конвейерная линия и оборудование, применяемое для сборки, являются универсальными, что позволяет легко адаптировать цех под сборку новых моделей автомобилей.</p>
-              <p class="text-style-1">Запорожский автозавод производит методом полномасштабного производства 5 моделей легковых автомобилей под брендом ЗАЗ. Часть комплектующих - силовые агрегаты, арматура, сиденья, пластмассовые изделия - производятся на предприятии. Остальное обеспечивают предприятия-поставщики, более 80% которых локализовано в Украине.</p>
-
-            <p class="caption-2">ИСПЫТАНИЯ</p>
-
-              <p class="text-style-1">Параметры автомобиля проверяются на установленных в сборочном цехе стендах обкатки, испытаний тормозов, регулировки углов установки управляемых колес и регулировки света фар.</p>
-                <div class="photo-history-2" style="margin-top: 10px;">
-                  <img src="images/photo-ZAZ-5.jpg"  class="photo-history-3">
-                </div>
-              <p class="text-style-1">После стендовых испытаний автомобиль отправляется на дорожные испытания. Трек состоит из разных типов покрытий - "Лежачий полицейский", пластин для проверки ассиметричных нагрузок, канатов для проверки симметричных нагрузок, различных видов дорожного покрытия. Эксперты-испытатели проверяют автомобиль на соответствие требованиям по шуму, вибрации и жесткости, проводят дополнительный визуальный осмотр всех узлов и агрегатов тестируемой машины на эстакаде для подъема/спуска.Каждый автомобиль проходит окончательную обработку, которая включает следующие этапы:</p>
-                <ul  class="list-style-1">
-                  <li>мойка после дорожной обкатки;</li>
-                  <li>инспекционный контроль на герметичность;</li>
-                  <li>устранение дефектов, выявленных после дорожной обкатки;</li>
-                  <li>контроль лицевых поверхностей;</li>
-                  <li>установка дополнительных опций.</li>
-                </ul>
-                  <br>
-                <div class="photo-history-2" style="margin-top: 10px;">
-                  <img src="images/photo-ZAZ-6.jpg"  class="photo-history-3">
-                </div>
-            <p class="caption-2">ЛОГИСТИКА</p>
-
-              <p class="text-style-1">После проведенных испытаний и окончательной обработки сформированная партия автомобилей перемещается на склад готовой продукции, в отдел логистики автомобилей. Модернизированная система логистики на ЗАЗе постоянно развивается, обеспечивая оперативность, эффективность и качество комплекса работ, связанных как со своевременными доставками комплектующих изделий на заводские конвейеры, так и с оперативными доставками готового авто в сеть продажи под заказ его будущего владельца. Центр логистики (площадь 12 тыс. кв.м.), расположенный на территории завода, позволяет в непрерывном режиме получать сотни тысяч грузов, необходимых для производства, эффективно их обрабатывать и оперативно доставлять к месту назначения на производство. Сегодня в систему логистики также включены две секции для накопления и отгрузки готовой продукции общей площадью 51 289 кв.м., где могут находиться свыше 1300 новых автомобилей, которые ежедневно готовы к отправлению в разные уголки Украины.</p>
-              <p class="text-style-1">ПАО «ЗАЗ» активно реализовывает экспортную политику, закрепляя достигнутые позиции на экспортных рынках и развивая новые направления. Предприятие осуществляет экспорт автомобилей, машинокомплектов и комплектующих в Россию, Казахстан, Азербайджан, Грузию, Армению, Беларусь, Сирию, Иорданию, Ирак, Египет.</p>
-        </div>
+          </div>
         <div class="contacts">
           <p class="caption-1">КОНТАКТНАЯ ИНФОРМАЦИЯ</p>
             <div class="contacts-hotline">
               <p class="cap-adress-text-style">«Горячая» линия дистрибьюторской компании:</p>
-              <p class="adress-text-style">0(800) 500-233 (бесплатно со всех стационарных телефонов Украины)</p>
+              <p class="adress-text-style">0(00)-000-00-00</p>
             </div>
             <div class="contact-style" style="margin-right: 8px;">
               <p class="cap-adress-text-style">Адрес:</p>
-                <p class="adress-text-style">03045, Украина, г. Киев, Столичное шоссе, 90</p>
-                <p class="adress-text-style">тел.: 0(44) 201-33-00</p>
-                <p class="adress-text-style">факс: 0(44) 201-33-01</p>
-                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">info@ukravto.kiev.ua</a></p>
+                <p class="adress-text-style">00000, Страна, область, город, улица, дом</p>
+                <p class="adress-text-style">тел.: 0(00) 000-00-00</p>
+                <p class="adress-text-style">факс: 0(00) 000-00-00</p>
+                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">0000000000000@com.ua</a></p>
             </div>
             <div class="contact-style">
               <p class="cap-adress-text-style">Служба поддержки клиентов:</p>
-                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">zaz-support@ukravtozaz.com</a><p>
+                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">00000000@00000000.com</a><p>
             </div>
             <div  class="contact-style" style="margin-right: 8px;">
               <p class="cap-adress-text-style">Отдел развития дилерской сети:</p>
-                <p class="adress-text-style">тел.: 0(44) 201-33-08</p>
-                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">ZAZnetwork@ukravtozaz.com</a></p>
+                <p class="adress-text-style">тел.: 0(00) 000-00-00</p>
+                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">00000000@00000000.com</a></p>
             </div>
             <div  class="contact-style">
               <p class="cap-adress-text-style">Пресс-служба:</p>
-                <p class="adress-text-style">тел: 0(44) 201-33-02</p>
-                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">pr@ukravtozaz.com</a></p>
+                <p class="adress-text-style">тел: 0(00) 000-00-00</p>
+                <p style="text-indent: 20px;"><a class="link-adress-style" href="#">00000000@00000000.com</a></p>
             </div>
         </div>
       </div>
@@ -340,10 +169,10 @@
           <p class="caption-1">ПРОДУКЦИЯ</p> <!--ВРЕМЕННО-->
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-bucket-bolt.jpg" title="Ведро с болтами">
+                <img class="production-cars-img" src="images/Product-1.jpg" title="Продукт 1">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">ВЕДРО С БОЛТАМИ</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 1</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -352,24 +181,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Ведро</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>бензиновый</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>1.3i 8v</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>1299</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -380,24 +209,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t2"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -406,10 +235,10 @@
             </div>
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-bucket-nut.jpg" title="Ведро с гайками">
+                <img class="production-cars-img" src="images/Product-2.jpg" title="Продукт 2">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">ВЕДРО С ГАЙКАМИ</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 2</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -418,24 +247,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Ведро</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>бензиновый</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>1.3i 8v</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>1299</p></td>
+                        <td id="t1"><p>Наименование характеристики</sup></p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -446,24 +275,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t2"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -472,10 +301,10 @@
             </div>
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-coffin-on-wheels.jpg" title="Гроб на колесах">
+                <img class="production-cars-img" src="images/Product-3.jpg" title="Продукт 3">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">ГРОБ НА КОЛЁСАХ</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 3</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -484,24 +313,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Ведро</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>бензиновый</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>1.3i 8v</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>1299</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -512,24 +341,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t2"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -538,10 +367,10 @@
             </div>
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-tarantas.jpg" title="Тарантас">
+                <img class="production-cars-img" src="images/Product-4.jpg" title="Продукт 4">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">ТАРАНТАС</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 4</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -550,24 +379,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Ведро</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>бензиновый</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>1.3i 8v</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p  style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>1299</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -578,24 +407,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t4"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t4"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -604,10 +433,10 @@
             </div>
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-cartwheel.jpg" title="Колымага">
+                <img class="production-cars-img" src="images/Product-5.jpg" title="Продукт 5">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">КОЛЫМАГА</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 5</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -616,24 +445,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Ведро</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>бензиновый</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>1.3i 8v</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>1299</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -644,24 +473,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t2"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -670,10 +499,10 @@
             </div>
             <div class="production-cars">
               <div class="production-cars-img-block">
-                <img class="production-cars-img" src="images/production-basin.jpg" title="Тазик-40л">
+                <img class="production-cars-img" src="images/Product-6.jpg" title="Продукт 6">
               </div>
               <div class="production-cars-text">
-                <div class="cars-text-style"><p><a href="#">ТАЗИК-40л</a></p></div>
+                <div class="cars-text-style"><p><a href="#">Продукт 6</a></p></div>
                 <div class="characteristics-main">
                   <div id="table1">
                     <table cellspasing="0" cellpadding="0">
@@ -682,24 +511,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип кузова</p></td>
-                        <td id="t2"><p>Тазик</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип двигателя</p></td>
-                        <td id="t2"><p>паровой</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Двигатель</p></td>
-                        <td id="t2"><p>40л</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                        <td id="t2"><p>40л</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Мощность, л.с. (kW)</p></td>
-                        <td id="t2"><p>70 (51,5)</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -710,24 +539,24 @@
                         <td id="t2" style="text-align: center; background-color: #b9cdf2; border-top-right-radius: 8px 8px;"><p><b>Значение</b></p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Тип привода</p></td>
-                        <td id="t2"><p>передний</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Масса снаряженная/полная, кг</p></td>
-                        <td id="t2"><p>1085-1151/1400</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем топливного бака, л</p></td>
-                        <td id="t2"><p>48</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Объем газового баллона, л</p></td>
-                        <td id="t2"><p>50</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                       <tr>
-                        <td id="t1"><p>Расход топлива на л/100 км</p></td>
-                        <td id="t2"><p>5,5 - 8,9</p></td>
+                        <td id="t1"><p>Наименование характеристики</p></td>
+                        <td id="t2"><p>Значение</p></td>
                       </tr>
                     </table>
                   </div>
@@ -739,46 +568,59 @@
         <div class="bucket-bolt">
           <div class="cars">
             <div class="car-name">
-              <p>ВЕДРО С БОЛТАМИ</p> <!--ВРЕМЕННО-->
+              <p>Продукт 1</p> <!--ВРЕМЕННО-->
             </div>
             <div class="car-photo">
               <div class="slider-container">
                 <div style="position: static; float: left; margin: 164px 1px 0 31px;"><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
                 <div class="mySlides" style="display: block;">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">1 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-1.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">1 из 8</div><br>
                       <div class="slider-text">Image 1</div>
                 </div>
 
                 <div class="mySlides">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt-1.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">2 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-2.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">2 из 8</div><br>
                       <div class="slider-text">Image 2</div>
                 </div>
 
                 <div class="mySlides">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt-2.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">3 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-3.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">3 из 8</div><br>
                       <div class="slider-text">Image 3</div>
                 </div>
 
                 <div class="mySlides">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt-3.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">4 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-4.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">4 из 8</div><br>
                       <div class="slider-text">Image 4</div>
                 </div>
 
                 <div class="mySlides">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt-4.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">5 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-5.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">5 из 8</div><br>
                       <div class="slider-text">Image 5</div>
                 </div>
 
                 <div class="mySlides">
-                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/bucket-bolt-5.jpg" width="500px" alt="" class="img-car"></div>
-                    <div class="slider-number">6 из 6</div><br>
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-6.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">6 из 8</div><br>
                       <div class="slider-text">Image 6</div>
                 </div>
+
+                <div class="mySlides">
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-7.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">7 из 8</div><br>
+                      <div class="slider-text">Image 7</div>
+                </div>
+
+                <div class="mySlides">
+                  <div style="width:500px; height: 375px; overflow: hidden;"><img src="images/Product1-8.jpg" width="500px" alt="" class="img-car"></div>
+                    <div class="slider-number">8 из 8</div><br>
+                      <div class="slider-text">Image 8</div>
+                </div>
+
                 <div style="position: static; margin: 180px 32px 0 0;"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
 
                 <br>
@@ -790,6 +632,8 @@
               <span class="dot" onclick="currentSlide(4)"></span>
               <span class="dot" onclick="currentSlide(5)"></span>
               <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
             </div>
           </div>
             <div class="car-characteristics">
@@ -799,245 +643,177 @@
                   <td id="tab2" style="background-color: #b9cdf2; text-align: center; font-weight: bold; line-height: 1.3em"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Тип кузова</p></td>
-                  <td id="tab2"><p>Ведро</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Дверей/мест</p></td>
-                  <td id="tab2"><p>4/5</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Габариты Д/Ш/В, мм</p></td>
-                  <td id="tab2"><p>4237/1678/1432</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>База, мм</p></td>
-                  <td id="tab2"><p>2520</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Колея пер./задн., мм</p></td>
-                  <td id="tab2"><p>1405/1425</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Масса снаряженная/полная, кг</p></td>
-                  <td id="tab2"><p>1085-1151/1400</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Объем багажника, л</p></td>
-                  <td id="tab2"><p>322/958</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Объем топливного бака (бензин), л</p></td>
-                  <td id="tab2"><p>48</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab3" colspan=2><p>Двигатель</p></td>
+                  <td id="tab3" colspan=2><p>Составная часть изделия</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Тип</p></td>
-                  <td id="tab2"><p>бензиновый</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Разм., кол-во цилиндров/клапанов на цил.</p></td>
-                  <td id="tab2"><p>4/2</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p style="line-height: 1em;">Объем, см<sup>3</sup></p></td>
-                  <td id="tab2"><p>1299</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Мощность, л.с.(kW)</p></td>
-                  <td id="tab2"><p>70 (51,5)</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Макс. крутящий момент Нм при об/мин.</p></td>
-                  <td id="tab2"><p>107.8/3000-3500</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab3" colspan=2><p>Трансмиссия</p></td>
+                  <td id="tab3" colspan=2><p>Составная часть изделия</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Тип привода</p></td>
-                  <td id="tab2"><p>передний</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>КПП</p></td>
-                  <td id="tab2"><p>мех. 5-ст.</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab3" colspan=2><p>Ходовая часть</p></td>
+                  <td id="tab3" colspan=2><p>Составная часть изделия</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Тормоза передние / задние</p></td>
-                  <td id="tab2"><p>дисковые /барабанные</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Подвеска передняя/задняя</p></td>
-                  <td id="tab2"><p>независимая / полузависимая</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Гидроусилитель</p></td>
-                  <td id="tab2"><p>опционально</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Шины</p></td>
-                  <td id="tab2"><p>175/70 R13</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab3" colspan=2><p>Эксплуатационные показатели</p></td>
+                  <td id="tab3" colspan=2><p>Составная часть изделия</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Максимальная скорость, км/ч</p></td>
-                  <td id="tab2"><p>162</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Расход топлива на л/100 км при работе на бензине</p></td>
-                  <td id="tab2"><p>5,5 - 8,9</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Уровень токсичности</p></td>
-                  <td id="tab2"><p>Автомобили 2017 г.в. - Евро-5</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Гарантия</p></td>
-                  <td id="tab2"><p>3 года или 100 000 км</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
                 <tr>
-                  <td id="tab1"><p>Периодичность ТО, км</p></td>
-                  <td id="tab2"><p>15 000 км</p></td>
+                  <td id="tab1"><p>Наименование характеристики</p></td>
+                  <td id="tab2"><p>Значение</p></td>
                 </tr>
               </table>
             </div>
           </div>
           <div class="other-cars">
             <div>
-              <p><a href="#">ВЕДРО С БОЛТАМИ</a></p>
+              <p><a href="#">Продукт 1</a></p>
             </div>
             <div>
-              <p><a href="#">ВЕДРО С ГАЙКАМИ</a></p>
+              <p><a href="#">Продукт 2</a></p>
             </div>
             <div>
-              <p><a href="#">ГРОБ НА КОЛЁСАХ</a></p>
+              <p><a href="#">Продукт 3</a></p>
             </div>
             <div>
-              <p><a href="#">ТАРАНТАС</a></p>
+              <p><a href="#">Продукт 4</a></p>
             </div>
             <div>
-              <p><a href="#">КОЛЫМАГА</a></p>
+              <p><a href="#">Продукт 5</a></p>
             </div>
             <div>
-              <p><a href="#">ТАЗИК-40л</a></p>
+              <p><a href="#">Продукт 6</a></p>
             </div>
           </div>
         </div>
 
         <div class="bucket-nut">
-          <p class="caption-1">ВЕДРО С ГАЙКАМИ</p> <!--ВРЕМЕННО-->
-          <img src="images/bucket-nut.jpg" width="300px">
+          <p class="caption-1">Продукт 2</p> <!--ВРЕМЕННО-->
+          <img src="images/Product2-2.jpg" width="300px">
         </div>
 
         <div class="coffin-on-wheels">
-          <p class="caption-1">ГРОБ НА КОЛЁСАХ</p> <!--ВРЕМЕННО-->
-          <img src="images/coffin-on-wheels.jpg" width="300px">
+          <p class="caption-1">Продукт 3</p> <!--ВРЕМЕННО-->
+          <img src="images/Product3-2.jpg" width="300px">
         </div>
 
         <div class="tarantas">
-          <p class="caption-1">ТАРАНТАС</p> <!--ВРЕМЕННО-->
-          <img src="images/tarantas.jpg" width="300px">
+          <p class="caption-1">Продукт 4</p> <!--ВРЕМЕННО-->
+          <img src="images/Product4-2.jpg" width="300px">
         </div>
 
         <div class="cartwheel">
-          <p class="caption-1">КОЛЫМАГА</p> <!--ВРЕМЕННО-->
-          <img src="images/cartwheel-1.gif" width="300px">
+          <p class="caption-1">Продукт 5</p> <!--ВРЕМЕННО-->
+          <img src="images/Product5-2.jpg" width="300px">
         </div>
       </div>
 
         <div class="basin">
-          <p class="caption-1">ТАЗИК-40л</p> <!--ВРЕМЕННО-->
-          <img src="images/basin-1.jpg" width="300px">
+          <p class="caption-1">Продукт 6</p> <!--ВРЕМЕННО-->
+          <img src="images/Product6-2.jpg" width="300px">
         </div>
 
       <div class="services">
         <div class="serv">
           <p class="caption-1">СЕРВИС И УСЛУГИ</p>
-            <p class="text-style-1">Филиал «АвтоЗАЗ-cервис» Корпорации «УКРАВТО» имеет развитую сервисную сеть - в общем количестве более 80 сертифицированных станций технического обслуживания (СТО) на территории каждой области Украины.</p>
-            <p class="text-style-1">Все сертифицированные СТО имеют необходимые производственные мощности, специальное и диагностическое оборудование, квалифицированный персонал для обеспечения качественного технического обслуживания и ремонта автомобилей бренда ЗАЗ.</p>
-            <p class="text-style-1">Для владельцев автомобилей ЗАЗ, покупающих и обслуживающих свои автомобили на предприятиях Корпорации «УКРАВТО», предоставляются дисконтные накопительные карточки «Carman» или «Carwoman», которые позволяют получать скидки на сервисные услуги и запасные части.</p>
-            <p class="text-style-1">Сервисные услуги, представляющиеся на сертифицированных СТО:</p>
-              <ul class="list-style-1">
-                <li>регламентное и сезонное техническое обслуживание (ТО);</li>
-                <li>диагностика и ремонт отдельных агрегатов и систем (подвеска, двигатель, АКПП, МКПП, электрооборудование и др.);</li>
-                <li>обновительный ремонт автомобиля (рихтовка и покраска кузову);</li>
-                <li>гарантийный ремонт;</li>
-                <li>установление дополнительного оборудования и элементов тюнинга (автосигнализация, аудиосистемы, газобалонное оборудование и другие работы);</li>
-                <li>инструментальный контроль (в случае необходимости прохождение государственного технического осмотра);</li>
-                <li>компьютерная диагностика;</li>
-                <li>регулировка улов установки колес (развал-схождение);</li>
-                <li>шиномонтаж, балансирование колес;</li>
-                <li>сезонное хранение шин;</li>
-                <li>разные виды мойки и уборки салона автомобиля;</li>
-                <li>услуги по эвакуации автомобиля и т.п.</li>
-              </ul>
-            <p class="text-style-1">К каждому Клиенту сервиса на сертифицированных СТО предусмотрен индивидуальный подход – от Вашего звонка в стол заказов для записи на техническое обслуживание или ремонт к моменту подписания акта выполненных работ. При этом специалист-консультант СТО обязательно предложит Вам наилучшее решение любой технической проблемы, которая максимально отвечает Вашим требованиям и пожеланиям по обслуживанию или ремонту Вашего автомобиля.</p>
         </div>
 
         <div class="guarantee">
 
           <p class="caption-1">ГАРАНТИЯ</p>
-
-            <p class="caption-2">Гарантийный срок эксплуатации  автомобилей ЗАЗ:</p>
-
-                <p class="text-style-1">ПАО «ЗАЗ» предоставляет Покупателю нового автомобиля марки ЗАЗ  гарантию, которая действует в течение 36 (тридцати шести) месяцев с даты продажи Автомобиля или до  100 000 (ста тысяч километров) пробега, в зависимости от того, что наступит раньше.  Гарантия  распространяется на все оригинальные детали, узлы, агрегаты и лакокрасочное покрытие кузова гарантийного Автомобиля, за исключением случаев, отмеченных в Гарантийных обязательствах. Правила и сроки проведения гарантийного ремонта отмечены в соответствующем документе - Приказ № 721 Минпромполитики Украины от 29.12.2004 г. «Об утверждении Порядка гарантийного ремонта (обслуживание) или гарантийной замены дорожных транспортных средств».</p>
-
-              <p class="text-style-2">Условия предоставления гарантии</p>
-
-                <p class="text-style-1">Сервисная книжка отвечает Автомобилю – она предоставлена и оформлена в соответствии с требованиями Гарантийных обязательств;</p>
-                <p class="text-style-1">Техническое обслуживание и ремонт Автомобиля проводятся на уполномоченных предприятиях (из числа приведенных в Сервисной книжке к Автомобилю) и с выполнением требований, указанных в Сервисной книжке по срокам проведения и объема регламентных работ;</p>
-                <p class="text-style-1">Обнаруженные  во время технического обслуживания повреждения кузова Автомобиля, которые не связаны с производственными дефектами, устраняются за счет Покупателя в течение 30 (тридцати) дней с момента их выявления (условие действует в случаях предъявления Покупателем претензий к качеству лакокрасочного покрытия или сквозной коррозии кузова).</p>
-
-
-              <p class="text-style-2">Гарантия на запасные части</p>
-
-                <p class="text-style-1">6 (шесть) месяцев от даты реализации конечному потребителю или от даты установки при выполнении гарантийного ремонта автомобиля на сервисном центре уполномоченного  дилерского предприятия.</p>
-
-              <p class="text-style-2">Гарантия на отдельные комплектующие</p>
-
-                <p class="text-style-1">На аккумуляторные батареи  предоставляется гарантия на 3 (три) месяца от даты продажи Автомобиля первому Покупателю при условии наличия дефектов производственного характера, если общий пробег Автомобиля за этот период не превышает  5 000 (пять тысяч) км.</p>
-
-              <p class="text-style-2">Гарантия на ЛФП и от сквозной коррозии кузову</p>
-
-                <p class="text-style-1">Гарантия от сквозной коррозии кузова, который предусматривает возобновление или замену отдельных элементов кузова, на которых обнаружены сквозные коррозийные повреждения, действует в течение 5 (пяти) годов от даты продажи Автомобиля.</p>
-
-              <p class="text-style-2">Условия прекращения гарантии</p>
-
-                <p class="text-style-1">При нарушении правил эксплуатации Автомобиля и требований Производителя, изложенных, в "Пособии по эксплуатации Автомобиля", в том числе:</p>
-                  <ul class="list-style-1">
-                    <li>при использовании масла (моторной и трасмиссионной оливы), тормозной жидкости, горючего и других эксплуатационных материалов, которые не входят в перечень разрешенных для использования на этом Автомобиле;</li>
-                    <li>при обеспечении пуска двигателя с помощью буксировки или толкания Автомобиля, а также при применении для этого внешних источников электроэнергии, использование которых не предусмотрено "Пособием по эксплуатации Автомобиля"</li>
-                  </ul>
-              <p class="text-style-2">Гарантийные обязательства Производителя не распространяются</p>
-                <p class="text-style-1">1. На детали, которые вышли из строя в результате естественного износа, а именно: резинотехнические изделия, электрические лампы, щетки электродвигателей, предохранители, щетки стеклоочистителей, диски сцепления, тормозные колодки, каталитический нейтрализатор, глушитель, датчик кислорода, свечи зажигания, сливные пробки и заправочные крышки, шины, стекло (в случае отсутствия производственного дефекта), обивку салона, а также на детали, которые вышли из строя в результате неправильной эксплуатации Автомобиля.</p>
         </div>
 
         <div class="accessory">
 
-            <p class="caption-2">Преимущества оригинальных запасных частей для автомобилей «ЗАЗ»</p>
-                <p class="text-style-1"><b>Цена:</b> оригинальные запчасти по более низкой цене, чем неоригинальные аналоги.</p>
-                <p class="text-style-1"><b>Гарантия:</b> на запчасти предоставляется 6-ти месячная гарантия. В случае выхода из строя – производится замена на новую запчасть.</p>
-                <p class="text-style-1"><b>Широкий ассортимент оригинальных запчастей:</b> удовлетворяет  100%  потребность в необходимых для ремонта или обслуживания автомобиля деталях.</b>
-                <p class="text-style-1">Полное соответствие запчастей по характеристикам и эксплуатационным качествам марке автомобиля.</p>
-                <p class="text-style-1"><b>Уникальный оригинальный номеру запчасти (Vin-код авто)</b> снижается риск приобретения ошибочного изделия, а также контрафактной продукции.</p>
-                <p class="text-style-1">Автомобиль работает с  100% эффективностью, а пассажиры автомобиля получают максимальную безопасность.</p>
-                <p class="text-style-1"><b>Продукция застрахована от подделок:</b> клеймо завода, голографическая наклейка, фирменная упаковка, оригинальный номер.</p>
-              <p class="text-style-2">Опасности, подстерегающие при покупке неоригинальных запасных частей для автомобилей «ЗАЗ»</p>
-                  <ul class="list-style-1">
-                    <li>Меньший ресурс эксплуатации</li>
-                    <li>Больший процент брака, значительный разброс в качестве от различных производителей</li>
-                    <li>Большое количество некачественных подделок</li>
-                    <li>Использование запчастей, не имеющих официального одобрения производителя, может послужить поводом для аннулирования гарантии на автомобиль</li>
-                    <li>Применение неоригинальных з/ч влечет определенные риски: снижения ресурса до замены, ухудшения параметров, в некоторых случаях – риск выхода из строя сопряженных узлов и агрегатов</li>
-                    <li>Ассортимент неоригинальных запчастей обычно намного меньше ввиду того, что производители стараются выпускать лишь наиболее ходовые детали. Некоторые детали, попросту, отсутствуют в не оригинале.</li>
-                  </ul>
+
         </div>
       </div>
 
@@ -1047,171 +823,98 @@
       <div class="client">
 
         <p class="caption-1">КОРПОРАТИВНЫМ КЛИЕНТАМ</p>
-              <p class="text-style-1">Важным направлением деятельности дистрибьюторской компании «АвтоЗАЗ-сервис» является работа с корпоративными клиентами, которая предусматривает гибкую систему скидок не только на автомобили, но и на запчасти и сервисное обслуживание.</p>
-              <p class="text-style-1">Многолетний опыт работы, индивидуальный подход к клиентам, учет специфики деятельности каждого предприятия - являются основными принципами работы нашей компании.</p>
-              <p class="text-style-1">Надежность и практичность автомобилей ЗАЗ оценили более полумиллиона автолюбителей, а нашими постоянными клиентами являются частные предприятия малого и среднего бизнеса и целый ряд государственных предприятий.</p>
-              <p class="text-style-1">Поэтому мы гордимся тем, что нам доверяют, с нами экономят!</p>
 
-          <p class="caption-2">МЫ ВАМ ПРЕДЛАГАЕМ:</p>
-                <ul class="list-style-1">
-                  <li>наиболее разветвленную дилерскую сеть в Украине: более 150 сервисных станций и автосалонов во всех регионах страны;</li>
-                  <li>специальные цены корпоративным клиентам на автомобили, запчасти и сервисные услуги;</li>
-                  <li>первоочередные поставки автомобилей;</li>
-                  <li>выгодные условия приобретения автомобилей, предоставляемых Вашей компании, распространяются и на Ваших сотрудников, желающих приобрести автомобили для личного пользования;</li>
-                  <li>гарантийную поддержку по всей территории Украины;</li>
-                  <li>специальные условия прохождения сервисного обслуживания;</li>
-                  <li>выгодные цены на дополнительное оборудование;</li>
-                  <li>индивидуальный подход к каждому клиенту.</li>
-                </ul>
-              <p class="text-style-1">Посетите ближайший дилерский центр и получите квалифицированную консультацию персонального менеджера, который будет сопровождать Ваш бизнес и поможет принять выгодное решение!</p>
-              <p class="text-style-1">Детали условий сотрудничества, а также ответы на все интересующие вопросы Вы можете получить, предварительно заполнив форму обратной связи</p>
-              <p class="text-style-1">или обратившись в в службу торговли автомобилями sales@ukravto.ua</p>
       </div>
+
       <div class="stocks">
         <p class="caption-1">АКЦИИ</p>
       </div>
       <div class="stock-1">
         <p class="caption-1">АКЦИЯ-1</p>
-        <p>ЗАЗимуем вместе!!!</p>
-        <p>Финальная распродажа автомобилей ZAZ 2018 року!</p>
-        <p>Выпавший снег и приход по-настоящему холодной погоды заставил многих вновь задуматься о личном комфорте и комфорте своих близких. А если еще речь идет и о удобстве и свободе передвижения, то вариантов, способных обеспечить всё это совсем не много. Одним из оптимальных решений может стать доступный и надежный автомобиль. Поэтому, чтобы сделать покупку автомобиля выгодной, официальный дистрибьютор автомобилей ZAZ в Украине объявляет о начале зимнего сезона распродаж!</p>
-        <p>Специальное предложение, которое будет действовать до конца 2016 года, позволяет клиентам, остановившим свой выбор на одной из моделей ZAZ, сэкономить на покупке до более чем 28 000 грн.</p>
-        <p>Согласно новым прайсам, стоимость одного из бестселлеров модельного ряда - ZAZ КОЛЫМАГА теперь составляет от 215 670 грн. При этом в оснащении автомобиля будут кондиционер, подогрев передних сидений, полный электропакет, аудиосистема с USB-разъёмом, фронтальные подушки безопасности, система ABS и другие полезные опции. Если же клиент пожелает автомобиль ZAZ FORZA в более богатом оснащении Lux, эта модификация обойдется клиенту в 220 410</p>
-        <table>
-          <tr>
-            <td>КОЛЫМАГА</td>
-            <td>Стандартна ціна а/м 2015 р.в.</td>
-            <td>Акційна ціна а/м 2015 р.в.</td>
-            <td>Вигода, грн</td>
-          </tr>
-          <tr>
-            <td>Седан   Lux</td>
-            <td>249 324 грн</td>
-            <td>220 410 грн</td>
-            <td>28 914</td>
-          </tr>
-          <tr>
-            <td>Хетчбек  Comfort</td>
-            <td>243 399 грн </td>
-            <td>215 670 грн</td>
-            <td>27 729</td>
-          </tr>
-          <tr>
-            <td>Хетчбек Lux</td>
-            <td>249 324 грн</td>
-            <td>220 410 грн</td>
-            <td>28 914</td>
-          </tr>
-        </table>
-
-
-        <p>Вряд ли стоит лишний раз акцентировать внимание на том, что на данный момент это одно из самых лучших предложений на рынке новых автомобилей по соотношению цена-качество.</p>
-
-
-        <p>Кроме этого, популярный среди украинских автолюбителей, благодаря своей неприхотливости и надежности, компактный седан ZAZ SENS доступен по цене от 170 905 грн.</p>
-        <p>Для тех же, кто выбирает автомобиль, который может обеспечить еще больше комфорта, пространства в салоне, а также более вместительный багажник, в салонах ZAZ доступна VIDA по цене от 248 850 грн.</p>
-
-        <p>Стоит обратить внимание, что специальное ценовое предложение ограничено, как по времени, так и наличием автомобилей в дилерской сети. Тем, кто принял решение, советуем не откладывать покупку нового автомобиля ZAZ. Чтобы поближе познакомиться с автомобилями, достаточно обратиться в ближайший дилерский центр ZAZ в Вашем регионе.</p>
-
-        <p><sup>*</sup>Акция действует с 15.11.2016р. по 15.01.2017р. Выгода до 11,6%. Под выгодой понимается разница между стандартной и акционной стоимости автомобиля. В илюстрации приведен максимальный размер выгоды для автомобиля ZAZ FORZA седан 2015 года производства в комплектации Lux по состоянию на 22.11.2016р. Количество акционных автомобилей ограничено. Продавец имеет право изменять комплектации и цены автомобилей без предварительного уведомления. ООО "Си Эй Автомотив" оставляет за собой право вносить изменения в условия акции в течение указанного срока действия. Подробная информация в салонах официальных дилеров ZAZ.</p>
-
-
-
-
-
       </div>
 
       <div class="stock-2">
         <p class="caption-1">АКЦИЯ-2</p>
-        <p>ZAZ КОЛЫМАГА - Только теплые чувства!</p>
-        <p>Накануне романтических праздников и такой долгожданной весенней поры тепла воспользуйся отличной возможностью порадовать себя и своих родных и стать владельцем автомобиля ZAZ КОЛЫМАГА по специальной цене от 195 500 грн.</p>
-        <p>Официальный дистрибьютор автомобилей ZAZ, компания «Си Эй Автомотив», накануне романтических праздников и такой долгожданной весенней поры тепла предлагает воспользоваться отличной возможностью и порадовать себя и своих родных. Только сейчас можно стать владельцем автомобиля который подарит множество незабываемых путешествий Вам или Вашим близким. Речь идет об одном из бестселлеров украинского автопроизводителя - модель ZAZ КОЛЫМАГА, которая предлагается сейчас по специальной цене от 195 500 грн.</p>
-        <p>Создавая модель ZAZ КОЛЫМАГА среди основных приоритетов было обеспечение достаточного уровня комфорта и безопасности для водителя и пассажиров, чтобы ощущение теплоты и уюта не покидало всех, кто находится в салоне автомобиля. Именно поэтому уровень оснащения ZAZ КОЛЫМАГА уже в начальной комплектации Standard + имеет опции, которые обеспечивают ощутимое преимущество над конкурентами в этом ценовом сегменте и предоставляют возможность создать соответствующую атмосферу.</p>
-
-        <p>Так, вышеупомянутая комплектация предлагает регулируемый по высоте руль, оснащенный гидроусилителем, кондиционер, а также передние и задние электростеклоподъемники. Среди стандартного оборудования, которое призвано заботиться о безопасности во время путешествия: передние противотуманные фары, подушка безопасности водителя и зеркала заднего вида с электроприводом и подогревом. Что касается безопасности во время стоянки, то такие системы как центральный замок с дистанционным управлением и штатный иммобилайзер, будут стоять на страже Вашего спокойствия независимо от времени суток и места парковки.</p>
-
-        <p>Для тех, кто захочет стать владельцем модели ZAZ КОЛЫМАГА в более богатой комплектации доступен уровень оснащения Comfort. При незначительной разнице в цене с начальной комплектацией, второй уровень оснащения подарит еще больше приятных опций, добавляющих «тепла» владельцу автомобиля или его спутникам. Среди оснащения, которое идет в дополнение к вышеперечисленному и обеспечивает дополнительный комфорт - аудиосистема с USB, МР3 и 4-мя динамиками и подогрев передних сидений, который действительно позаботится о теплых чувствах. Из систем безопасности, их перечень расширен АВS и EBD и подушкой безопасности пассажира.</p>
-
-        <p>Следует отметить, что в настоящее время наблюдается тенденция к росту популярности среди клиентов, которые выбирают ZAZ КОЛЫМАГА, модели в исполнении практичного и комфортного хэтчбека с пятидверным кузовом. Однако неизменно высоким спросом пользуется и модель в кузове седан.</p>
-        <table>
-          <tr>
-            <td>Уровень комплектации / тип кузова</td>
-            <td>Объем двигателя / Тип КПП</td>
-            <td>Базовая цена, грн с НДС</td>
-            <td>Акционная цена, грн с НДС</td>
-          </tr>
-          <tr>
-            <td>Standard+, седан</td>
-            <td>1,5 MT5</td>
-            <td>245 000</td>
-            <td>195 500,00</td>
-          </tr>
-          <tr>
-            <td>Comfort, седан</td>
-            <td>1,5 MT5</td>
-            <td>256 700</td>
-            <td>243 912,50</td>
-          </tr>
-          <tr>
-            <td>Comfort, хетчбек</td>
-            <td>1,5 MT5</td>
-            <td>256 700</td>
-            <td>243 912,50</td>
-          </tr>
-          <tr>
-            <td>Lux, хетчбек</td>
-            <td>1,5 MT5</td>
-            <td>263 000</td>
-            <td>249 850,00</td>
-          </tr>
-        </table>
-        <p>Что касается силовых агрегатов, то автомобиль независимо от кузова и уровня комплектации предлагается с экономичным и экологичным 4-цилиндровым бензиновым двигателем объемом 1.5 литров мощностью 109 л.с., который агрегатируется механической пятиступенчатой коробкой передач. Силовая установка и коробка были разработаны известной австрийской компанией ACTECO, что является залогом безотказной и четкой работы трансмиссии в течение всего моторесурса.</p>
-        <p>Отвечая современным стандартам качества автомобили ZAZ, кроме надежности и доступности обеспечиваются сервисной гарантией в 3 года, или 100 тыс. км пробега. При этом межсервисный интервал составляет 15 тыс. км, что является общепринятым европейским стандартом гарантийной политики обслуживания автомобилей. В большинстве автопроизводителей.</p>
-
-        <p>О наличии автомобилей, а также подробную информацию о действующих предложениях можно узнать посетив салон официальной дилерской сети ZAZ.</p>
-
-        <p><sup>*</sup> Цены приведены по состоянию на 24.02.2016. Предложение действует на автомобили ZAZ КОЛЫМАГА 2015 выпуска в дилерской сети ООО «Си Эй Автомотив». Количество автомобилей ограничено. Продавец имеет право изменять комплектации и цены автомобилей без предварительного уведомления покупателя.</p>
       </div>
 
 
       <div class="stock-3">
         <p class="caption-1">АКЦИЯ-3</p>
-        <p>Собственный автомобиль? С ZAZ #ВСЕ_РЕАЛЬНО!</p>
-        <p>На весь модельный ряд ZAZ действует специальная программа, которая позволяет купить новый автомобиль ZAZ на действительно выгодных условиях, всего за 37 гривен в день!</p>
-        <img src="images/stock-3-1.png">
-        <p>Модели автомобилей украинского производителя ZAZ всегда ассоциировались с доступностью. К сожалению, в свете непростой ситуации в которой оказалась Украина, для большинства покупателей автомобили стали не просто роскошью, а несбыточной мечтой. Поэтому на весь модельный ряд ZAZ действует специальная программа, которая позволяет купить новый автомобиль ZAZ, в зависимости от финансовых возможностей клиента, на действительно выгодных условиях. Суть специального кредитного предложения от одного из коммерческих банков состоит в том, что стать владельцем ZAZ можно всего от 37 гривен в день!</p>
-        <img src="images/stock-3-2.png">
-        <p>К примеру, один из бестселлеров автопроизводителя, компактный седан ZAZ SENS стоимостью 143 000 грн. Сейчас покупка этого автомобиля становится более чем реальной. Заключив кредитный договор с банковским учреждением ежедневный платеж от 37 гривен в день позволит Вам стать владельцем нового автомобиля. Согласитесь, что даже живя и работая в одном и том же городе, расходы на проезд соизмеримы с этой цифрой. Но, при этом, покупатель получает все преимущества владения собственным автомобилем.</p>
-        <img src="images/stock-3-3.png">
-        <p>Другой представитель модельного ряда Запорожского Автомобилестроительного Завода – ZAZ FORZA - пользующийся спросом благодаря современному дизайну интерьера и экстерьера, экономичному силовому агрегату и комфортному салону. Кредитное предложение делает реальным как никогда покупку автомобиля стоимостью в 187 000 грн., а ежедневный платеж составит всего от 49 гривен. Это более чем доступная сумма, особенно для людей, которые хотят комфортно добираться на работу независимо от погоды.</p>
-        <img src="images/stock-3-4.png">
-        <p>Также условия специального кредитного предложения распространяются и на модель, которую можно встретить практически в любом уголке Украины - ZAZ VIDA. Стать владельцем седана с просторным салоном, внушительным багажным отделением и надежной ходовой, адаптированной для езды по нашим дорогам, сейчас действительно реально. При стоимости автомобиля в 231 000 грн., владение будет обходиться от 61 гривны в день. Это по-настоящему привлекательное предложение, с учетом практически отсутствующих кредитных программ с адекватными ставками.</p>
-        <img src="images/stock-3-5.png">
-        <p>Еще одна модель, получившая в свое время звание «народный автомобиль», проверенный временем и нашими дорогами – ZAZ LANOS. Этот представитель модельного ряда ZAZ сейчас также предлагается в рамках кредитной программы. Стать владельцем нового автомобиля стоимостью в 198 000 грн., воспользовавшись услугами коммерческого банка действительно выгодно: ежедневный платеж составит всего от 52 гривны в день. При этом, условия действуют на модификацию с автоматической коробкой передач, что на данный момент является одним из самых доступных предложений на рынке новых автомобилей, оснащенных АКПП.</p>
-
-
-
-        <p>Среди дополнительных аргументов в пользу моделей ZAZ, покупка которых сейчас более чем реальна: широкая сеть сервисных станций, которая позволяет провести гарантийный регламентный технический осмотр почти в любом районном центре, и сервисная гарантия на 3 года или 100 тыс.км пробега, что полностью соответствует европейским стандартам гарантийной политики обслуживания автомобилей.</p>
-
-
-
-        <p><sup>*</sup>Цены приведены по состоянию на 23.06.2016г. Указанные расчеты сделаны для автомобилей ZAZ SENS TF698К20, FORZA седан AF685411, VIDA SF69Y0-20, LANOS TA69W0 согласно условиям кредитной программы ПАО "Кредобанк" (Лицензия НБУ № 43 от 11.10.2011 года): аванс 60% от стоимости автомобиля, срок 84 мес., процентная ставка - 14,49% годовых. Программа кредитования предусматривает дополнительные платежи: разовая комиссия банка - 3,49% от суммы кредита, добровольное страхование от несчастных случаев - 2,99% от суммы кредита (платеж за 1-й год включается в сумму кредита, со второго года кредитования тариф составляет 2,5% от остатка по кредиту), страхование КАСКО и ОСАГО (размер страховых платежей согласно условиям страховой компании-партнера). Страховой Партнер - ОДО «Экспресс Страхование», Лицензия: АВ №429899 от 04.11.2008г., АВ №594256 от 24.01.2012г., АВ №429898 от 04.11.2008 г.. Предложение действует в дилерской сети ООО «Си Эй Автомотив » с 23.06.2016 по 30.09.2016г.</p>
       </div>
-
-
 
       <div class="news">
         <p class="caption-1">НОВОСТИ</p>
       </div>
     </div>
   </container>
+
   <footer>
-    <p>© ООО "Си Эй Автомотив", 2017.</p>
-<p>Все права защищены.</p>
-<p>Горячая линия: 0 800 500 233</p>
-<p>Звонки со стационарных телефонов в пределах Украины бесплатные</p>
-<p>Официальные дистрибьюторы автомобилей ЗАЗ в Украине Филия «АвтоЗАЗ-сервис» и ООО "Си Эй автомотив". Компании имеют широкую сеть партнеров и дилерских центров, которая обеспечивает полный комплекс услуг, начиная от продажи автомобилей, тест-драйва, страхования, кредитования и заканчивая официальным гарантийным и послегарантийным сервисным обслуживанием.</p>
-<p>Разработка сайтов  NewAgeLab</p>
+    <p>© ООО "Ля Ля Тополя", 2018.</p>
+    <p>Все права защищены.</p>
+    <p>Горячая линия: 0(00) 000-00-00</p>
+    <p>Звонки со стационарных телефонов в пределах Государства бесплатные</p>
+
   </footer>
 </body>
+<script type="text/javascript">
+
+    document.getElementByID('nav').onmouseover = function (event) {
+        var target = event.target;
+        if (target.className == 'menu-item') {
+          var s = target.getElementsByClassName('sub-menu');
+          closeMenu();
+          s[0].style.display='inline-block';
+        }
+      }
+      document.onmouseover = function (event) {
+        var target = event.target;
+        console.log(event.target);
+        if (target.className != 'menu-item' && target.className!='sub-menu'{
+          closeMenu();
+        })
+      }
+      function closeMenu() {
+        var menu = getElementByID('nav');
+        var subm = getElementsByClassName('sub-menu');
+        for (i=0; i < subm; i++) {
+          subm[i].style.display="none";
+        }
+      }
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  var slideIndex = 1;
+  showSlides (slideIndex);
+    function plusSlides (n) {
+      showSlides (slideIndex += n);
+    }
+    function currentSlide (n) {
+      showSlides (slideIndex = n);
+    }
+      function showSlides (n) {
+        var i;
+        var slides = document.getElementsByClassName ("mySlides");
+        var dots = document.getElementsByClassName ("dot");
+
+        if (n > slides.length) {
+          slideIndex  = 1;
+        }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace ("active", "");
+              }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += "active";
+        }
+</script>
+
 </html>
