@@ -5,6 +5,7 @@
 }
 /*---------HEADER-----------*/
 .header-style {
+  z-index: 3;
 }
   .logo-slider {
     width: 954px;
@@ -32,7 +33,7 @@
   width: 958px;
   border: 1px solid #222;
   margin-top: 2px;
-  display: block;
+  display: inline-block;
   position: static;
 }
 /*------------MENU-------------*/
@@ -44,18 +45,18 @@
 	font-size: 12px;
 	font-weight: bold;
 	text-align: center;
-  z-index: 777;
+  z-index: 6;
 	}
 .menu-item {
 	display: inline-block;
 	position: static;
-	width: 136px;
+	width: 136.8px;
 	background-color: #003399;
 	float: left;
 	height: auto;
 	line-height: 2em;
 	cursor: pointer;
-  z-index: 888;
+  z-index: 7;
 	}
 .menu-item:hover{
 	background-color: #DCDCDC;
@@ -65,10 +66,10 @@
 	display: inline-block;
 	float: none;
 	position: static;
-	width: 136px;
+	width: 136.8px;
 	text-decoration: none;
 	line-height: 2em;
-	z-index: 999;
+	z-index: 8;
 	padding: 0;
 	background-color: #003399;
 	color: #fff;
@@ -89,6 +90,9 @@
   padding: 0;
 }
 /*---------CONTAINER-----------*/
+.container{
+
+}
 .container-style {
   display: block;
   margin-top: 2px;
@@ -96,6 +100,7 @@
   min-height: auto;
   border: 1px solid #000;
   background: #fff;
+  z-index: 1;
 }
 .home {
 
@@ -128,6 +133,7 @@
       font-weight: normal;
       font-style: normal;
       text-indent: 40px;
+      z-index: 1;
     }
       .text-style-2 {
         font-family: Gotham Narrow;
@@ -137,6 +143,7 @@
         line-height: 14pt;
         font-weight: bold;
         font-style: normal;
+        z-index: 1;
       }
         ul.list-style-1 {
           list-style-type: none;
@@ -190,7 +197,8 @@
         box-shadow: 0 0 2px black;
         }
         .photo-history-text {
-          font-family: Arial 14pt;
+          font-family: Arial;
+          font-size: 14pt;
           font-weight: bold;
           text-align: center;
           line-height: 1em;
@@ -329,13 +337,13 @@
                 width: auto;
                 height: 160px;
               }
-                #t1 > p:hover, #t2 > p:hover {
+                .t1 > p:hover, .t2 > p:hover {
                   background-color: #000;
                   color: #fff;
                   border-radius: 5px;
                 }
-                #table1 {
-                  display: inline-block;
+                .table1 {
+                  display: block;
                   float: left;
                   width: 343px;
                   height: auto;
@@ -344,31 +352,34 @@
                   border-radius: 10px;
                   box-shadow: 0 0 7px #000;
                 }
-                #t1{
+                .t1{
                     text-align: left;
                     text-indent: 5px;
                     width: 220px;
+                    padding: 0;
                   }
-                    #t2 {
+                    .t2 {
                       width: 117px;
                       text-align: center;
+                      padding: 0;
                     }
-                      .characteristics-main p {
+                      .t1 > p, .t2 > p {
                         font-family: Tahoma;
-                        font-size: 10.5pt;
-                        line-height: 1.5em;
+                        font-size: 14px;
+                        line-height: 21px;
                         text-decoration: none;
+                        margin: 0;
                       }
 .product {
   display: block;
   margin: 1px;
   width: 934px;
   padding: 0 10px 0 10px;
-  height: 1000px;
+  height: 1100px;
   border: 1px solid #000;
 }
 
-  .cars {
+  .about-product {
     display: block;
     float: left;
     width: 652px;
@@ -376,7 +387,7 @@
     margin: 5px 0 5px 0;
     position: static;
   }
-    .car-name {
+    .product-name {
       display: block;
       visibility: visible;
       width: 650px;
@@ -387,7 +398,7 @@
       border-radius: 10px;
       box-shadow: 0 0 7px black;
     }
-        .car-name > p {
+        .product-name > p {
           font-family: sans-serif;
           font-size: 16px;
           font-style: normal;
@@ -404,21 +415,7 @@
           margin: auto;
           margin: 0 1px 0 1px;
           text-align: center;
-          align: middle;
         }
-          .img-car {
-            width: 500px;
-            height: 375px;
-            overflow: hidden;
-            -moz-transition: all 1s ease-out;
-            -o-transition: all 1s ease-out;
-            -webkit-transition: all 1s ease-out;
-          }
-            .img-car:hover {
-              -webkit-transform: scale(1.1);
-              -moz-transform: scale(1.1);
-              -o-transform: scale(1.1);
-            }
               .mySlides {
                 display: none;
                 -wabkit-animation-name: fade;
@@ -426,6 +423,9 @@
                 -animation-name: fade;
                 -animation-duration: 1.5s;
                 float: left;
+              }
+              .mySlides > div > img {
+                width: 500px;
               }
           .prev {
             cursor: pointer;
@@ -478,44 +478,20 @@
                 font-weight: 500;
                 position: relative;
                 display: inline-block;
-                top: -30px;
+                top: -40px;
                 background-color: #fff;
                 opacity: 0.7;
                 border-radius: 3px;
               }
-                .dot {
-                  cursor: pointer;
-                  height: 13px;
-                  width: 13px;
-                  margin: 0 2px;
-                  background-color: #a3a3a3;
-                  border-radius: 50%;
-                  display: inline-block;
-                  transition: background-color 0.6s ease;
+                @-webkit-keyframes .mySlides {
+                  from {opacity: 4}
+                  to {opacity: 1}
                 }
-                  .dotactive {
-                    background-color: #000;
-                    cursor: pointer;
-                    height: 13px;
-                    width: 13px;
-                    margin: 0 2px;
-                    background-color: red;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.6s ease;
+                  @keyframes .mySlides {
+                    from {opacity: 4}
+                      to {opacity: 1}
                   }
-                  .dot:hover {
-                    background-color: #717171;
-                  }
-                      @-webkit-keyframes .mySlides {
-                        from {opacity: 4}
-                        to {opacity: 1}
-                      }
-                        @keyframes .mySlides {
-                          from {opacity: 4}
-                          to {opacity: 1}
-                        }
-            .car-characteristics {
+            .product-characteristics {
               display: block;
               width: 648px;
               min-height: auto;
@@ -523,9 +499,16 @@
               margin: 0 1px 0 1px;
               padding: 0;
             }
-              #table2 {
+            .table2 {
+                display: block;
+                width: 646px;
+                height: auto;
+                margin: 1px;
+                background-color: #e3e4e5;
+                border-radius: 10px;
+                box-shadow: 0 0 7px #000;
                 }
-                #tab1 {
+                .tab1 {
                   width: 423px;
                   font-family: Tahoma;
                   font-size: 11pt;
@@ -534,7 +517,7 @@
                   text-align: left;
                   text-indent: 10px;
                 }
-                  #tab2 {
+                  .tab2 {
                     width: 220px;
                     font-family: Tahoma;
                     font-size: 11pt;
@@ -542,7 +525,7 @@
                     text-decoration: none;
                     text-align: center;
                   }
-                    #tab3 {
+                    .tab3 {
                       background-color: #b9cdf2;
                       text-align: center;
                       font-family: Tahoma;
@@ -551,31 +534,45 @@
                       text-decoration: none;
                       font-weight: bold;
                       }
-                        .other-cars {
+                      .table2 p{
+                        font-family: Tahoma;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-decoration: none;
+                        margin: 0;
+                      }
+                        .other-products {
                           display: block;
                           float: right;
                           width: 272px;
                           height: 400px;
                           margin: 5px 0 5px 0;
                         }
-                          .other-cars > div {
+                          .other-products > div {
                             display: block;
                             width: 266px;
-                            height: 50px;
+                            height: auto;
                             border: 1px dashed #b9cdf2;
                             background-color: #b9cdf2;
                             margin: 5px 1px 5px 1px;
                             border-radius: 5px;
                             box-shadow: 0 0 5px #000;
                             text-align: center;
-                            font-family: Verdana, "Trebuchet MS", sans-serif;
+                            font-family: Verdana, sans-serif;
                           }
-                          .other-cars a {
+                          .other-products a {
                             text-decoration: none;
                             color: #000;
                             font-weight: bold;
+                            margin: 0px;
                           }
-
+                          .other-products img {
+                            display: none;
+                            width: 255px;
+                            margin: 5px;
+                            border-radius: 5px;
+                            box-shadow: 0 0 5px #000;
+                          }
 .services {
   margin: 1px;
   width: 934px;
