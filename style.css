@@ -408,89 +408,26 @@
         }
         .slider-container {
           width: 648px;
-          height: auto;
+          height: 480px;
           border: 1px dashed #000;
           padding: 1px 0 1px 0;
-          display: inline-block;
+          display: block;
           margin: auto;
           margin: 0 1px 0 1px;
           text-align: center;
         }
-              .mySlides {
-                display: none;
-                -wabkit-animation-name: fade;
-                -wabkit-animation-duration: 1.5s;
-                -animation-name: fade;
-                -animation-duration: 1.5s;
-                float: left;
-              }
-              .mySlides > div > img {
-                width: 500px;
-              }
-          .prev {
-            cursor: pointer;
-            position: static;
-            width: auto;
-            padding: 16px;
-            color: #000;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 5px 0 0 5px;
-            float: left;
+          #slider {
+            display: block;
+            width: 640px;
+            height: 480px;
+            position: relative;
+            overflow: hidden;
           }
-          .next {
-            cursor: pointer;
-            position: static;
-            width: auto;
-            padding: 16px;
-            color: #000;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 5px 5px 0;
-          }
-            .prev:hover {
-              background-color: rgba(0, 0, 0, 0.8);
-              color: #fff;
-            }
-            .next:hover {
-              background-color: rgba(0, 0, 0, 0.8);
-              color: #fff;
-            }
-              .slider-number {
-                width: 40px;
-                color: #000;
-                font-size: 12px;
-                font-weight: 500;
-                position: relative;
-                display: inline-block;
-                top: -360px;
-                background-color: #fff;
-                opacity: 0.7;
-                border-radius: 3px;
-              }
-              .slider-text {
-                width: auto;
-                color: #000;
-                font-family: serif;
-                font-size: 12px;
-                font-weight: 500;
-                position: relative;
-                display: inline-block;
-                top: -40px;
-                background-color: #fff;
-                opacity: 0.7;
-                border-radius: 3px;
-              }
-                @-webkit-keyframes .mySlides {
-                  from {opacity: 4}
-                  to {opacity: 1}
-                }
-                  @keyframes .mySlides {
-                    from {opacity: 4}
-                      to {opacity: 1}
-                  }
+          #one, #two {
+          			width: 640px;
+          			height: 480px;
+          			position: absolute;
+          		}
             .product-characteristics {
               display: block;
               width: 648px;
@@ -541,14 +478,14 @@
                         text-decoration: none;
                         margin: 0;
                       }
-                        .other-products {
+                        #other-products {
                           display: block;
                           float: right;
                           width: 272px;
                           height: 400px;
                           margin: 5px 0 5px 0;
                         }
-                          .other-products > div {
+                          .right-prod {
                             display: block;
                             width: 266px;
                             height: auto;
@@ -559,20 +496,27 @@
                             box-shadow: 0 0 5px #000;
                             text-align: center;
                             font-family: Verdana, sans-serif;
-                          }
-                          .other-products a {
                             text-decoration: none;
                             color: #000;
                             font-weight: bold;
-                            margin: 0px;
                           }
-                          .other-products img {
+                          .other-img {
                             display: none;
-                            width: 255px;
-                            margin: 5px;
+                            position: relative;
+                            margin: -53px 0 5px -270px;
                             border-radius: 5px;
                             box-shadow: 0 0 5px #000;
+                            z-index: 999;
+                            float: left;
+                            width: 255px;
+                            border: 1px solid #000;
+                            background-color: #222;
                           }
+                            .other-img > img {
+                              width: 245px;
+                              margin: 4px;
+                              border-radius: 4px;
+                            }
 .services {
   margin: 1px;
   width: 934px;
@@ -619,9 +563,82 @@
   margin: 1px;
   width: 948px;
   padding: 0 3px 0 3px;
-  min-height: 492px;
+  min-height: 780px;
   border: 1px solid #000;
 }
+  .stocks-all-name {
+    width: auto;
+    float: left;
+  }
+  .stock-name {
+    display: block;
+    position: static;
+    width: 300px;
+    height: 200px;
+    margin: 1px;
+    border: 1px solid lightblue;
+    text-align: center;
+  }
+    .stock-name > img {
+      width: 260px;
+      margin: 1px;
+      border: 1px solid green;
+      border-radius: 7px;
+      transform: translateX(-15px);
+    }
+    .stock-name > img:hover {
+      transform: translateX(5px);
+    }
+      .stocks-short-txt {
+        width: 602px;
+        height: 702px;
+        float: right;
+        display: block;
+        position: relative;
+        }
+      .stocks-txt-1, .stocks-txt-2, .stocks-txt-3{
+        width: 600px;
+        height: 700px;
+        border: 1px solid green;
+        background-color: #fff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: -30px;
+      }
+      .stocks-txt-1::before, .stocks-txt-1::after {
+        content: '';
+        position: absolute;
+        left: -70px; top: 60px;
+        border: 40px solid transparent;
+        border-right: 30px solid green;
+      }
+        .stocks-txt-1::after {
+          border-right: 30px solid #fff;
+          left: -69px;
+        }
+          .stocks-txt-2::before, .stocks-txt-2::after {
+            content: '';
+            position: absolute;
+            left: -70px; top: 270px;
+            border: 40px solid transparent;
+            border-right: 30px solid green;
+          }
+            .stocks-txt-2::after {
+              border-right: 30px solid #fff;
+              left: -69px;
+            }
+                .stocks-txt-3::before, .stocks-txt-3::after {
+                  content: '';
+                  position: absolute;
+                  left: -70px; top: 470px;
+                  border: 40px solid transparent;
+                  border-right: 30px solid green;
+                }
+                  .stocks-txt-3::after {
+                    border-right: 30px solid #fff;
+                    left: -69px;
+                  }
 .news {
   margin: 1px;
   width: 948px;
