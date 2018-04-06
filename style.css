@@ -16,17 +16,27 @@
     background-color: #fff;
   }
   .logo {
-    width: 142px;
-    height: 142px;
-    border: 1px dashed #000;
+    width: 200px;
+    height: 200px;
     display: block;
     float: left;
     background-color: #fff;
   }
     .logo-image {
-      width: 142px;
+      width: 198px;
     }
-
+    #slider {
+      display: block;
+      width: 752px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    #one, #two {
+          width: 752px;
+          height: 200px;
+          position: absolute;
+        }
 
 #nav {
   height: 40px;
@@ -416,18 +426,7 @@
           margin: 0 1px 0 1px;
           text-align: center;
         }
-          #slider {
-            display: block;
-            width: 640px;
-            height: 480px;
-            position: relative;
-            overflow: hidden;
-          }
-          #one, #two {
-          			width: 640px;
-          			height: 480px;
-          			position: absolute;
-          		}
+
             .product-characteristics {
               display: block;
               width: 648px;

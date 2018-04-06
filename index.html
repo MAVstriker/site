@@ -12,7 +12,10 @@
         <div class="logo">
           <img class="logo-image" src="images/logo-small.png" alt="logo" title="logo-image">
         </div>
-
+        <div id="slider">
+          <img id="one" src="" alt="" title="">
+          <img id="two" src="" alt="" title="">
+        </div>
       </div>
       <div id="nav">
           <div id="menu">
@@ -570,10 +573,7 @@
             </div>
             <div class="product-photo">
               <div class="slider-container">
-                <div id="slider">
-                  <img id="one" src="" alt="" title="">
-                  <img id="two" src="" alt="" title="">
-                </div>
+
               </div>
             </div>
             <div class="product-characteristics">
@@ -898,18 +898,18 @@
   // ---------SLIDER----------------
   (function () {
     var startPosOne = 0,
-        startPosTwo = 640,
+        startPosTwo = 752,
         imgNumOne = 1,
         imgNumTwo = imgNumOne + 1,
-        imgMaxNum = 8;
-    one.setAttribute('src', 'images/Product1-1.jpg');
-    two.setAttribute('src', 'images/Product1-2.jpg');
+        imgMaxNum = 9;
+    one.setAttribute('src', 'images/Slide-1.jpg');
+    two.setAttribute('src', 'images/Slide-2.jpg');
     one.style.left = 0 + 'px';
-    two.style.left = 640 + 'px';
+    two.style.left = 752 + 'px';
 
     function move() {
       var stopInterval = setInterval (function(){
-        if (startPosOne <= -635 && startPosTwo <= 5){
+        if (startPosOne <= -747 && startPosTwo <= 5){
           clearInterval(stopInterval);
         };
         startPosOne -= 5;
@@ -923,9 +923,9 @@
       imgNumOne = imgNumOne % imgMaxNum + 1;
       imgNumTwo = imgNumTwo % imgMaxNum + 1;
         var newImg = document.createElement('img');
-        newImg.setAttribute ('src', 'images/Product1-' + imgNumTwo + '.jpg');
+        newImg.setAttribute ('src', 'images/Slide-' + imgNumTwo + '.jpg');
         startPosOne = 0;
-        startPosTwo = 640;
+        startPosTwo = 752;
         newImg.style.left = startPosTwo +'px';
         newImg.style.position = 'absolute';
         slider.appendChild(newImg);
