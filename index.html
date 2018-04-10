@@ -10,42 +10,50 @@
     <div class="header-style">
       <div class="logo-slider">
         <div class="logo">
-          <img class="logo-image" src="images/logo-small.png" alt="logo" title="logo-image">
+          <img src="images/logo-small.png" alt="logo" title="logo-image">
         </div>
         <div id="slider">
           <img id="one" src="" alt="" title="">
           <img id="two" src="" alt="" title="">
         </div>
       </div>
-      <div id="nav">
-          <div id="menu">
-				      <div class="menu-item">О компании
-					        <div class="sub-menu">История предприятия</div>
-					        <div class="sub-menu">Производство</div>
-					        <div class="sub-menu">Контактная информация</div>
-				      </div>
-				      <div class="menu-item">Продукция
-					        <div class="sub-menu">Продукт 1</div>
-					        <div class="sub-menu">Продукт 2</div>
-          				<div class="sub-menu">Продукт 3</div>
-          				<div class="sub-menu">Продукт 4</div>
-          				<div class="sub-menu">Продукт 5</div>
-          				<div class="sub-menu">Продукт 6</div>
-      				</div>
-      				<div class="menu-item">Сервис и услуги
-        					<div class="sub-menu">Сервисное обслуживание</div>
-        					<div class="sub-menu">Гарантия</div>
-        					<div class="sub-menu">Запчасти и аксесуары</div>
-      				</div>
-      				<div class="menu-item">Дилеры</div>
-      				<div class="menu-item">Клиентам</div>
-      				<div class="menu-item">Акции
-        					<div class="sub-menu">Акция 1</div>
-        					<div class="sub-menu">Акция 2</div>
-        					<div class="sub-menu">Акция 3</div>
-      				</div>
-      				<div class="menu-item">Новости</div>
-			    </div>
+      <div class="menu">
+        <ul id="nav">
+          <li><a href="#" title="О компании">О компании</a>
+            <ul>
+              <li><a href="#" title="История предприятия">История предприятия</a></li>
+              <li><a href="#" title="Производство">Производство</a></li>
+              <li><a href="#" title="Контактная информация">Контактная информация</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="">Продукция</a>
+            <ul>
+              <li><a href="#" title="Продукт 1">Продукт 1</a></li>
+              <li><a href="#" title="Продукт 2">Продукт 2</a></li>
+              <li><a href="#" title="Продукт 3">Продукт 3</a></li>
+              <li><a href="#" title="Продукт 4">Продукт 4</a></li>
+              <li><a href="#" title="Продукт 5">Продукт 5</a></li>
+              <li><a href="#" title="Продукт 6">Продукт 6</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="Сервис и услуги">Сервис и услуги</a>
+            <ul>
+              <li><a href="#" title="Сервисное обслуживание">Сервисное обслуживание</a></li>
+              <li><a href="#" title="Гарантия">Гарантия</a></li>
+              <li><a href="#" title="Запчасти и аксесуары">Запчасти и аксесуары</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="Дилеры">Дилеры</a></li>
+          <li><a href="#" title="Клиентам">Клиентам</a></li>
+          <li><a href="#" title="Акции">Акции</a>
+            <ul>
+              <li><a href="#" title="Акция 1">Акция 1</a></li>
+              <li><a href="#" title="Акция 2">Акция 2</a></li>
+              <li><a href="#" title="Акция 3">Акция 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="Новости">Новости</a></li>
+        </ul>
       </div>
 
       <div class="way">
@@ -869,32 +877,6 @@
 
   </footer>
   <script>
-  //-------------Menu----------------
-      document.getElementById('menu').onmouseover = function (event) {
-        var target = event.target;
-        if (target.className == 'menu-item') {
-            var s = target.getElementsByClassName('sub-menu');
-            closeMenu();
-            for (var j=0; j < s.length; j++) {
-            s[j].style.display='inline-block';
-                }
-            }
-      }
-      document.onmouseover = function (event) {
-        var target = event.target;
-        if (target.className!='menu-item' && target.className!='sub-menu') {
-            closeMenu();
-            }
-      }
-      var closeMenu = function() {
-        var menu = document.getElementById('menu');
-        var subm = document.getElementsByClassName('sub-menu');
-        for (var i=0; i < subm.length; i++) {
-            subm[i].style.display="none";
-            }
-     }
-  </script>
-  <script>
   // ---------SLIDER----------------
   (function () {
     var startPosOne = 0,
@@ -943,12 +925,6 @@
       }
       slide();
   }) ()
-
-
-
-
-
-
   </script>
     <script>
       document.getElementById('other-products').onmouseover = function (event) {
