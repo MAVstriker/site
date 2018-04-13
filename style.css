@@ -142,9 +142,6 @@
   background: #fff;
   z-index: 1;
 }
-.home {
-
-}
 .caption-1 {
   font-family: Verdana;
   font-size: 16pt;
@@ -243,13 +240,44 @@
           text-align: center;
           line-height: 1em;
         }
-/*----------TO-PRODUCTIO----------*/
+/*----------TO-PRODUCTION----------*/
 .to-production {
   margin: 1px;
   width: 934px;
   padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
+}
+.photo-to-prod-1 {
+  display: block;
+  float: right;
+  width: 350px;
+  border: 1px #e3e4e5 dashed;
+  padding: 3px;
+  margin: 0 5px 5px 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #e3e4e5;
+  box-shadow: 0 0 7px black;
+}
+.photo-to-prod-2 {
+  display: block;
+  float: left;
+  width: 350px;
+  border: 1px #e3e4e5 dashed;
+  padding: 3px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #e3e4e5;
+  box-shadow: 0 0 7px black;
+}
+.photo-to-prod-text {
+  font-family: Arial;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1em;
 }
 /*------------CONTACTS----------*/
 .contacts {
@@ -314,9 +342,6 @@
           }
 /*-----------PRODUCTION----------*/
 .production {
-
-}
-  .production-all {
     margin: 1px;
     width: 934px;
     padding: 0 10px 0 10px;
@@ -415,10 +440,9 @@
   margin: 1px;
   width: 934px;
   padding: 0 10px 0 10px;
-  height: 1100px;
+  height: 1262px;
   border: 1px solid #000;
 }
-
   .about-product {
     display: block;
     float: left;
@@ -426,10 +450,10 @@
     border: 1px dashed green;
     margin: 5px 0 5px 0;
     position: static;
+    height: 1253px;
   }
     .product-name {
       display: block;
-      visibility: visible;
       width: 650px;
       height: 30px;
       margin-bottom: 5px;
@@ -446,7 +470,7 @@
           line-height: 1px;
           text-align: center;
         }
-        .slider-container {
+        .photo-product {
           width: 648px;
           height: 480px;
           border: 1px dashed #000;
@@ -555,21 +579,21 @@
 }
 .serv {
   margin: 1px;
-  width: 904px;
+  width: 934px;
   padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
 .guarantee {
   margin: 1px;
-  width: 904px;
+  width: 934px;
   padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
 }
 .accessory {
   margin: 1px;
-  width: 904px;
+  width: 934px;
   padding: 0 10px 0 10px;
   min-height: 492px;
   border: 1px solid #000;
@@ -682,7 +706,7 @@ footer {
   display: inline-block;
   position: static;
   width: 940px;
-  height: 300px;
+  height: 200px;
   padding: 3px 10px;
   background-color: #fff;
   text-align: justify;
